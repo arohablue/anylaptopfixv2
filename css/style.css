@@ -245,7 +245,7 @@ header {
 }
 
 header .logo {
-  margin: -10px 0 0 0;
+  margin: 20px 0 0 0;
   float: left;
 }
 
@@ -290,6 +290,7 @@ header .logo h1 {
 
 @media (min-width: 768px) {
   header .navigation {
+    margin: 35px 0 0 0;
     float: right;
   }
 }
@@ -2294,6 +2295,7 @@ article img.pull-right, article .align-right {
     margin-right: 0;
     margin-left: 0;
   }
+  
   .navbar .nav {
     margin-top: 40px;
     border-bottom: 1px solid #2d2d2d;
