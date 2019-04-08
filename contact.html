@@ -208,25 +208,25 @@
               <div class="span3 form-group">
               Email Address*
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email" />
+                  data-rule="email" data-msg="Please enter a valid email" required/>
                 <div class="validation"></div>
               </div>
               <div class="span3 form-group">
               Phone Number*
                 <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number"
-                  data-rule="minlen:10" data-msg="Please enter a valid phone number" />
+                  data-rule="minlen:10" data-msg="Please enter a valid phone number" required/>
                 <div class="validation"></div>
               </div>
               <div class="span12 form-group">
               Subject
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
                 <div class="validation"></div>
               </div>
               <div class="span12 form-group">
               Message
                 <textarea class="form-control" id="message" rows="12" cols="179" name="message" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
+                  data-msg="Please write something for us" placeholder="Message" required></textarea>
                 <div class="validation"></div>
                 <p class="text-center">
                   <button class="btn btn-large btn-theme margintop10" onclick="sendSms()" type="submit">Submit message</button>
