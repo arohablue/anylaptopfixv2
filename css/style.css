@@ -2717,3 +2717,93 @@ article img.pull-right, article .align-right {
 }
 
 /* Theme Styler :: End */
+
+/* Srvices*/
+
+.section-header {
+  display: inline-block;
+  /* margin-bottom: 23px; */
+  /* position: relative; */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-top: 5%;
+ 
+}
+
+.features-box {
+  display: inline-block;
+  max-width: 100%;
+  padding-left: 80px;
+  position: relative;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.features-box > i {
+  color: #cd2122;
+  font-size: 65px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.features-box > h3 {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 18px;
+  letter-spacing: 0.72px;
+  line-height: 26px;
+  margin-top: 0;
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.features-box > p {
+  color: #777777;
+  letter-spacing: 0.56px;
+  line-height: 25px;
+  margin-bottom: 0;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.whylap-content{
+  color: #777777;
+  line-height: 24px;
+  letter-spacing: 0.56px;
+}
+
+.whylap-box-alt{
+  background-color: #fff;
+    border: 1px solid #e8e8e8;
+    display: inline-block;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.whylap-box-alt .whylap-heading {
+  font-style: italic;
+  margin-top: 10px;
+  color: #fff;
+  font-family: 'Noto Serif', serif;
+}
+
+.whylap-box-alt:hover {
+  -webkit-box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px #D10024;
+  box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px #D10024;
+}
+
+.rounded-circle {
+  border-radius: 50%!important;
+}
+
+.jumbotron{
+  background-image: url(data\ recovery-01.png);
+  padding: 0;
+ 
+}
