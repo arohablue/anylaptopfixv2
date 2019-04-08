@@ -15,9 +15,12 @@
   <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
   <link href="css/jcarousel.css" rel="stylesheet" />
   <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/slitslider.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <!-- Theme skin -->
   <link href="skins/rose.css" rel="stylesheet" />
+  <!-- boxed bg -->
+  <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
@@ -25,12 +28,6 @@
   <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
   <link rel="shortcut icon" href="ico/favicon.png" />
 
-  <!-- =======================================================
-    Theme Name: Flattern
-    Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 
 <body>
@@ -42,8 +39,8 @@
           <div class="span12">
             <ul>
               <li><strong>We are available for any custom works this month</strong></li>
-              <li>Main office: Springville center X264, Park Ave S.01</li>
-              <li>Call us <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891</li>
+              <li>SHOP NO 3, Behind Persistent company, Hinjewadi Rajiv Gandhi Infotech Park, Pune</li>
+              <li>Call us <i class="icon-phone"></i> +91 941 412 2001</li>
             </ul>
           </div>
         </div>
@@ -52,13 +49,13 @@
     <!-- end toggle top area -->
     <!-- start header -->
     <header>
-      <div class="container ">
+      <div class="container">
         <!-- hidden top area toggle link -->
         <div id="header-hidden-link">
           <a href="#" class="toggle-link" title="Click me you'll get a surprise" data-target=".hidden-top"><i></i>Open</a>
         </div>
         <!-- end toggle link -->
-        <div class="row nomargin">
+        <!--<div class="row nomargin">
           <div class="span12">
             <div class="headnav">
               <ul>
@@ -66,108 +63,21 @@
                 <li><a href="#mySignin" data-toggle="modal">Sign in</a></li>
               </ul>
             </div>
-            <!-- Signup Modal -->
-            <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
-              </div>
-              <div class="modal-body">
-                <form class="form-horizontal">
-                  <div class="control-group">
-                    <label class="control-label" for="inputEmail">Email</label>
-                    <div class="controls">
-                      <input type="text" id="inputEmail" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="inputSignupPassword">Password</label>
-                    <div class="controls">
-                      <input type="password" id="inputSignupPassword" placeholder="Password">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="inputSignupPassword2">Confirm Password</label>
-                    <div class="controls">
-                      <input type="password" id="inputSignupPassword2" placeholder="Password">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="controls">
-                      <button type="submit" class="btn">Sign up</button>
-                    </div>
-                    <p class="aligncenter margintop20">
-                      Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Sign in</a>
-                    </p>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- end signup modal -->
-            <!-- Sign in Modal -->
-            <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySigninModalLabel" aria-hidden="true">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 id="mySigninModalLabel">Login to your <strong>account</strong></h4>
-              </div>
-              <div class="modal-body">
-                <form class="form-horizontal">
-                  <div class="control-group">
-                    <label class="control-label" for="inputText">Username</label>
-                    <div class="controls">
-                      <input type="text" id="inputText" placeholder="Username">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="inputSigninPassword">Password</label>
-                    <div class="controls">
-                      <input type="password" id="inputSigninPassword" placeholder="Password">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="controls">
-                      <button type="submit" class="btn">Sign in</button>
-                    </div>
-                    <p class="aligncenter margintop20">
-                      Forgot password? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>
-                    </p>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- end signin modal -->
-            <!-- Reset Modal -->
-            <div id="myReset" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="myResetModalLabel" aria-hidden="true">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 id="myResetModalLabel">Reset your <strong>password</strong></h4>
-              </div>
-              <div class="modal-body">
-                <form class="form-horizontal">
-                  <div class="control-group">
-                    <label class="control-label" for="inputResetEmail">Email</label>
-                    <div class="controls">
-                      <input type="text" id="inputResetEmail" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="controls">
-                      <button type="submit" class="btn">Reset password</button>
-                    </div>
-                    <p class="aligncenter margintop20">
-                      We will send instructions on how to reset your password to your inbox
-                    </p>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <!-- end reset modal -->
+             Signup Modal 
+            
+            end signup modal
+            Sign in Modal
+            
+            end signin modal
+            Reset Modal
+            
+            end reset modal
           </div>
-        </div>
+        </div>-->
         <div class="row">
           <div class="span4">
             <div class="logo">
-              <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
+              <a href="index-alt2.html"><img src="img/logo.png" alt="" class="logo" /></a>
               <h1>Flat and trendy bootstrap template</h1>
             </div>
           </div>
@@ -176,33 +86,24 @@
               <div class="navigation">
                 <nav>
                   <ul class="nav topnav">
-                    <li class="dropdown active">
-                      <a href="index.html">Home <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
+                    <!-- <li class="dropdown active"> -->
+                    <li class="active"><a href="index.html">Home </a>
+                      <!-- <ul class="dropdown-menu">
                         <li><a href="index-alt2.html">Homepage 2</a></li>
                         <li><a href="index-alt3.html">Homepage 3</a></li>
-                      </ul>
+                      </ul> -->
                     </li>
                     <li class="dropdown">
-                      <a href="#">Features <i class="icon-angle-down"></i></a>
+                      <a href="data-recovery.html">Data Recovery <i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
                         <li><a href="typography.html">Typography</a></li>
-                        <li><a href="table.html">Table</a></li>
                         <li><a href="components.html">Components</a></li>
-                        <li><a href="animations.html">56 Animations</a></li>
-                        <li><a href="icons.html">Icons</a></li>
                         <li><a href="icon-variations.html">Icon variations</a></li>
-                        <li class="dropdown"><a href="#">3 Sliders <i class="icon-angle-right"></i></a>
-                          <ul class="dropdown-menu sub-menu-level1">
-                            <li><a href="index.html">Nivo slider</a></li>
-                            <li><a href="index-alt2.html">Slit slider</a></li>
-                            <li><a href="index-alt3.html">Parallax slider</a></li>
-                          </ul>
-                        </li>
+                        
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#">Pages <i class="icon-angle-down"></i></a>
+                      <a href="#">Repair <i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
                         <li><a href="about.html">About us</a></li>
                         <li><a href="pricingbox.html">Pricing boxes</a></li>
@@ -243,53 +144,85 @@
     <!-- end header -->
     <section id="featured">
       <!-- start slider -->
-      <!-- Slider -->
-      <div id="nivo-slider">
-        <div class="nivo-slider">
-          <!-- Slide #1 image -->
-          <img src="img/slides/nivo/bg-1.jpg" alt="" title="#caption-1" />
-          <!-- Slide #2 image -->
-          <img src="img/slides/nivo/bg-2.jpg" alt="" title="#caption-2" />
-          <!-- Slide #3 image -->
-          <img src="img/slides/nivo/bg-3.jpg" alt="" title="#caption-3" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="span12">
-              <!-- Slide #1 caption -->
-              <div class="nivo-caption" id="caption-1">
-                <div>
-                  <h2>Awesome <strong>features</strong></h2>
-                  <p>
-                    Lorem ipsum dolor sit amet nsectetuer nec Vivamus. Curabitu laoreet amet eget. Viurab oremd ellentesque ameteget. Lorem ipsum dolor sit amet nsectetuer nec vivamus.
-                  </p>
-                  <a href="#" class="btn btn-theme">Read More</a>
-                </div>
+      <div id="slider" class="sl-slider-wrapper demo-2">
+        <div class="sl-slider">
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-1">
               </div>
-              <!-- Slide #2 caption -->
-              <div class="nivo-caption" id="caption-2">
-                <div>
-                  <h2>Fully <strong>responsive</strong></h2>
-                  <p>
-                    Lorem ipsum dolor sit amet nsectetuer nec Vivamus. Curabitu laoreet amet eget. Viurab oremd ellentesque ameteget. Lorem ipsum dolor sit amet nsectetuer nec vivamus.
-                  </p>
-                  <a href="#" class="btn btn-theme">Read More</a>
-                </div>
+              <h2><strong>Premium</strong> template</h2>
+              <blockquote>
+                <p>
+                  You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.
+                </p>
+                <cite>Johny Doe Mblangsak</cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-2">
               </div>
-              <!-- Slide #3 caption -->
-              <div class="nivo-caption" id="caption-3">
-                <div>
-                  <h2>Very <strong>customizable</strong></h2>
-                  <p>
-                    Lorem ipsum dolor sit amet nsectetuer nec Vivamus. Curabitu laoreet amet eget. Viurab oremd ellentesque ameteget. Lorem ipsum dolor sit amet nsectetuer nec vivamus.
-                  </p>
-                  <a href="#" class="btn btn-theme">Read More</a>
-                </div>
+              <h2><strong>Twitter</strong> bootstrap</h2>
+              <blockquote>
+                <p>
+                  Until he extends the circle of his compassion to all living things, man will not himself find peace.
+                </p>
+                <cite>Ramond Schummiler</cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-3">
               </div>
+              <h2><strong>Responsive</strong> layout</h2>
+              <blockquote>
+                <p>
+                  Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the
+                  abattoirs.
+                </p>
+                <cite>Andress Michel Aorta</cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-4">
+              </div>
+              <h2><strong>Awesome</strong> features</h2>
+              <blockquote>
+                <p>
+                  The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.
+                </p>
+                <cite>Smilee Bounvaller</cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-5">
+              </div>
+              <h2><strong>Premium</strong> support</h2>
+              <blockquote>
+                <p>
+                  I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.
+                </p>
+                <cite>Clarke Edward Thompson</cite>
+              </blockquote>
             </div>
           </div>
         </div>
+        <!-- /sl-slider -->
+        <nav id="nav-dots" class="nav-dots">
+          <span class="nav-dot-current"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </nav>
       </div>
+      <!-- /slider-wrapper -->
       <!-- end slider -->
     </section>
     <section class="callaction">
@@ -682,4 +615,5 @@
   <script src="js/custom.js"></script>
 
 </body>
+
 </html>
