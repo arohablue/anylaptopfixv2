@@ -2803,7 +2803,26 @@ article img.pull-right, article .align-right {
 }
 
 .jumbotron{
-  background-image: url(data\ recovery-01.png);
+  background-image: url(data_recovery_noicons-01.png);
+  color: white;
   padding: 0;
  
+}
+
+ .col-lg-4 { 
+  /* margin-bottom: 1.5rem; */
+   text-align: center;
+}
+.overlay{
+  background: rgba(0,0,0,0.5);
+  padding: 4em;
+  
+} 
+.fade {
+  opacity: 1;
+}
+
+.hideme
+{
+    opacity:0;
 }
