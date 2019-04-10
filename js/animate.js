@@ -126,6 +126,14 @@ jQuery(document).ready(function($) {
 		function () {
 		$(this).removeClass("animated fadeInUp");
 		}
+	);
+	$(".e_fadeInUpScroll").scroll(
+		function () {
+		$(this).addClass("animated fadeInUp");
+		},
+		function () {
+		$(this).removeClass("animated fadeInUp");
+		}
 	);	
 	$(".e_fadeInDown").hover(
 		function () {
