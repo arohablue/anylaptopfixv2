@@ -2998,7 +2998,7 @@ slideRight
 }
 
 video#vid {
-  position: absolute; right: 0; bottom: 0;
+  position: fixed; right: 0; bottom: 0;
   min-width: 100%; min-height: 100%;
   width: 100%; height: auto; z-index: -100;
   background: url(polina.png) no-repeat;
@@ -3041,3 +3041,24 @@ video#vid {
     background: #f2b632;
     color: #fff;
   } 
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+    background-color: rgba(14, 0, 0, 0.5);
+  }
+  
+  #overlay-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    transform: translate(-50%,-50%);
+    z-index: -100;
+    -ms-transform: translate(-50%,-50%);
+  }
