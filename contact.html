@@ -26,6 +26,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
   <link rel="shortcut icon" href="ico/favicon.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- =======================================================
     Theme Name: Flattern
@@ -37,15 +38,29 @@
 
 <body>
   <div id="wrapper">
+    <!--floating social media  social-links-->
+    
+    <div class="social">
+        <a href="#" title="Facebook" rel="noreferrer" ><i class="icon-facebook icon-32 icon-circled"></i></a>
+        <br>
+        <a href="#" title="Twitter" rel="noreferrer" ><i class="icon-twitter icon-32 icon-circled"></i></a>
+        <br>
+        <a href="#" title="Linkedin" rel="noreferrer"><i class="icon-linkedin icon-32 icon-circled"></i></a>
+        <br>
+        <a href="#" title="Whatsapp" rel="noreferrer" ><i class="fab fa-whatsapp icon-32 icon-circled"></i></a>
+        <br>
+        <a href="#" title="Instagram" rel="noreferrer" ><i class="fab fa-instagram icon-32 icon-circled"></i></a>
+      </div>
+        <!--end floating social media-->
     <!-- toggle top area -->
     <div class="hidden-top">
       <div class="hidden-top-inner container">
         <div class="row">
           <div class="span12">
             <ul>
-              <li><strong>We are available for any custom works this month</strong></li>
-              <li>Main office: Springville center X264, Park Ave S.01</li>
-              <li>Call us <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891</li>
+              <li><strong>To fix all your laptop problems come to our lab </strong></li>
+              <li>SHOP NO 3, Behind Persistent company, Hinjewadi Rajiv Gandhi Infotech Park, Pune</li>
+              <li>Call us <i class="icon-phone"></i> +91 941 412 2001</li>
             </ul>
           </div>
         </div>
@@ -61,10 +76,12 @@
             data-target=".hidden-top"><i></i>Open</a>
         </div>
         <!-- end toggle link -->
+        
         <div class="row">
           <div class="span4">
             <div class="logo">
               <a href="index.html"><img src="img/logo-s-03.png" alt="" class="logo" /></a>
+             
             </div>
           </div>
           <div class="span8">
@@ -72,12 +89,10 @@
               <div class="navigation">
                 <nav>
                   <ul class="nav topnav">
-                    <!-- <li class="dropdown active"> -->
-                    <li><a href="index.html">Home </a>
-                      <!-- <ul class="dropdown-menu">
-                        <li><a href="index-alt2.html">Homepage 2</a></li>
-                        <li><a href="index-alt3.html">Homepage 3</a></li>
-                      </ul> -->
+                    <li class="dropdown"><a href="index.html">Home <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="index-alt3.html">Home-2</a></li>
+                      </ul> 
                     </li>
                     <li class="dropdown">
                       <a href="data-recovery.html">Data Recovery <i class="icon-angle-down"></i></a>
@@ -99,7 +114,7 @@
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#">Portfolio <i class="icon-angle-down"></i></a>
+                      <a href="animations.html">Products<i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
                         <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
                         <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
@@ -107,14 +122,8 @@
                         <li><a href="portfolio-detail.html">Portfolio detail</a></li>
                       </ul>
                     </li>
-                    <li class="dropdown">
-                      <a href="#">Blog <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
-                        <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
-                        <li><a href="post-left-sidebar.html">Post left sidebar</a></li>
-                        <li><a href="post-right-sidebar.html">Post right sidebar</a></li>
-                      </ul>
+                    <li>
+                      <a href="about.html">About us</a> 
                     </li>
                     <li class="active">
                       <a href="contact.html">Contact </a>
@@ -233,19 +242,19 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="span3">
+          <div class="span6">
             <div class="widget">
               <h5 class="widgetheading">Browse pages</h5>
               <ul class="link-list">
-                <li><a href="#">About our company</a></li>
-                <li><a href="#">Our services</a></li>
-                <li><a href="#">Meet our team</a></li>
-                <li><a href="#">Explore our portfolio</a></li>
-                <li><a href="#">Get in touch with us</a></li>
+                <li><a href="about.html">About our company</a></li>
+                <li><a href="animations.html">Buy laptops</a></li>
+                <li><a href="repair.html">Repair your electronics</a></li>
+                <li><a href="data-recovery.html">Recover your data</a></li>
+                <li><a href="contact.html">Get in touch with us</a></li>
               </ul>
             </div>
           </div>
-          <div class="span3">
+          <!-- <div class="span3">
             <div class="widget">
               <h5 class="widgetheading">Important stuff</h5>
               <ul class="link-list">
@@ -256,8 +265,8 @@
                 <li><a href="#">Flattern forum</a></li>
               </ul>
             </div>
-          </div>
-          <div class="span3">
+          </div> -->
+          <!-- <div class="span4">
             <div class="widget">
               <h5 class="widgetheading">Flickr photostream</h5>
               <div class="flickr_badge">
@@ -267,18 +276,17 @@
               <div class="clear">
               </div>
             </div>
-          </div>
-          <div class="span3">
+          </div> -->
+          <div class="span6">
             <div class="widget">
               <h5 class="widgetheading">Get in touch with us</h5>
               <address>
-                <strong>Flattern studio, Pte Ltd</strong><br>
-                Springville center X264, Park Ave S.01<br>
-                Semarang 16425 Indonesia
+                <strong>Any Laptop Fix</strong><br>
+                SHOP NO 3, Behind Persistent company, Hinjewadi Rajiv Gandhi Infotech Park, Pune
               </address>
               <p>
-                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
-                <i class="icon-envelope-alt"></i> email@domainname.com
+                <i class="icon-phone"></i> +91 941 412 2001 <br>
+                <i class="icon-envelope-alt"></i>  tarunelitecomputer@gmail.com
               </p>
             </div>
           </div>
@@ -290,7 +298,7 @@
             <div class="span6">
               <div class="copyright">
                 <p>
-                  <span>&copy; Flattern - All right reserved.</span>
+                  <span>&copy; Any Laptop Fix - All right reserved.</span>
                 </p>
                 <div class="credits">
                   <!--
@@ -298,8 +306,8 @@
                     You can delete the links only if you purchased the pro version.
                     Licensing information: https://bootstrapmade.com/license/
                     Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
-                  -->
-                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                  
+                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
                 </div>
               </div>
             </div>
@@ -309,7 +317,7 @@
                 </li>
                 <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a>
                 </li>
-                <li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a>
+                <li><a href="https://www.linkedin.com/in/anylaptopfixpune/" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a>
                 </li>
                 <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a>
                 </li>
