@@ -2390,6 +2390,8 @@ article img.pull-right, article .align-right {
   }
   header .logo img {
     margin-bottom: 10px;
+    height: 10px;
+    width: 10px;
   }
   header .logo h1 {
     font-size: 14px;
