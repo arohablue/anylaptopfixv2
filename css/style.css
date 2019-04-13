@@ -2998,10 +2998,46 @@ slideRight
 }
 
 video#vid {
-  position: fixed; right: 0; bottom: 0;
+  position: absolute; right: 0; bottom: 0;
   min-width: 100%; min-height: 100%;
   width: 100%; height: auto; z-index: -100;
   background: url(polina.png) no-repeat;
   background-size: cover;
   margin: 0 auto;
   }
+
+  .social {
+    height: 300px;
+    position: fixed;
+    margin-top: 25%;
+    perspective: 1000px;
+    right: 0;
+    z-index: 100;
+    float: right;
+    padding-bottom: 20px;
+  }
+  /* 
+  .social {
+    padding-bottom: 20px;
+  } */
+  
+  .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    color: #f2b632;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #f2b632;
+  }
+  
+  .social-links a:hover {
+    background: #f2b632;
+    color: #fff;
+  } 
