@@ -2996,3 +2996,12 @@ slideRight
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
+
+video#vid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: 100%; height: auto; z-index: -100;
+  background: url(polina.png) no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  }
