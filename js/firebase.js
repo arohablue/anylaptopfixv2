@@ -45,21 +45,21 @@ function fetchProducts() {
   db.collection("products").get().then(function(querySnapshot) {
     //var array = Array();
     var productList = [];
-    var storageRef = firebase.storage().ref().child(doc.id).getDownloadURL();
+    var count = 0;
     querySnapshot.forEach(function(doc) {
+      var imgId= "imgPro"+count;
+      count++
       console.log(doc.id);
-      storageRef.child(doc.id).getDownloadURL().then(function(url) {
-        console.log(url);
-        document.querySelector('#imgPro').src = url;
-
-    });
-      
-      productList += '<li class="item-thumbs span3 design" data-id="id-0" data-type="web"><a class="hover-wrap fancybox" data-fancybox-group="gallery" title="'+ doc.data().name +'" onclick="fetchProduct(' + doc.id + ')"><span class="overlay-img"></span><span class="overlay-img-thumb font-icon-plus"></span></a><img id="imgPro" src="" alt="'+ doc.data().description +'"></li>';
+      var storageRef = firebase.storage().ref();
+      productList += '<li class="item-thumbs span3 design" data-id="id-0" data-type="web"><a class="hover-wrap fancybox" data-fancybox-group="gallery" title="'+ doc.data().name +'" onclick="fetchProduct(' + doc.id + ')"><span class="overlay-img"></span><span class="overlay-img-thumb font-icon-plus"></span></a><img id="'+imgId+'" src="" alt="'+ doc.data().description +'"></li>';
       // doc.data() is never undefined for query doc snapshots
       console.log(doc.id, " => ", doc.data());
+      storageRef.child(doc.id).getDownloadURL().then(function(url) {
+        console.log(url);
+        document.querySelector("#"+imgId).src = url;
+      });
       //return productList;
-
-    });
+  });
     document.getElementById('productAppender').innerHTML = productList;
   }).catch(function(error) {
     console.log("Error getting Products:", error);
