@@ -12,7 +12,7 @@
 
   function fetchImage(productId) {
       var storageRef = firebase.storage().ref();
-      storageRef.child('fn7gKULPpMf9vsCb1XMR').getDownloadURL().then(function(url) {
+      storageRef.child(productId).getDownloadURL().then(function(url) {
           var test = url;
           alert(url);
           document.querySelector('#imgPro').src = test;
@@ -25,7 +25,7 @@
 
 
  function fetchProduct(productId) {
-  var docRef = db.collection("products").doc("fn7gKULPpMf9vsCb1XMR");
+  var docRef = db.collection("products").doc(productId);
   docRef.get().then(function(doc) {
     
       if (doc.exists) {
@@ -41,12 +41,26 @@
  }
 
 
-function fetchProducts() {
+function fetchProducts() { 
   db.collection("products").get().then(function(querySnapshot) {
+    //var array = Array();
+    var productList = [];
+    var storageRef = firebase.storage().ref().child(doc.id).getDownloadURL();
     querySnapshot.forEach(function(doc) {
-        // doc.data() is never undefined for query doc snapshots
-        console.log(doc.id, " => ", doc.data());
+      console.log(doc.id);
+      storageRef.child(doc.id).getDownloadURL().then(function(url) {
+        console.log(url);
+        document.querySelector('#imgPro').src = url;
+
     });
+      
+      productList += '<li class="item-thumbs span3 design" data-id="id-0" data-type="web"><a class="hover-wrap fancybox" data-fancybox-group="gallery" title="'+ doc.data().name +'" onclick="fetchProduct(' + doc.id + ')"><span class="overlay-img"></span><span class="overlay-img-thumb font-icon-plus"></span></a><img id="imgPro" src="" alt="'+ doc.data().description +'"></li>';
+      // doc.data() is never undefined for query doc snapshots
+      console.log(doc.id, " => ", doc.data());
+      //return productList;
+
+    });
+    document.getElementById('productAppender').innerHTML = productList;
   }).catch(function(error) {
     console.log("Error getting Products:", error);
 });

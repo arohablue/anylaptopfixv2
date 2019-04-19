@@ -18,6 +18,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- Theme skin -->
   <link href="skins/rose.css" rel="stylesheet" />
+  <!-- boxed bg -->
+  <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
@@ -34,7 +36,7 @@
   ======================================================= -->
 </head>
 
-<body>
+<body onload="fetchProducts()">
   <div id="wrapper">
     <!--floating social media  social-links-->
     
@@ -276,6 +278,10 @@
   <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
   <!-- javascript
     ================================================== -->
+    <!-- Firebase JavaScript File -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <!-- Firebase Custom JavaScript File -->
+  <script src="js/firebase.js"></script>
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
@@ -293,7 +299,7 @@
   <script src="js/jquery.slitslider.js"></script>
   <script src="js/animate.js"></script>
   <script src="js/custom.js"></script>
-  <script src="js/getProductData.js"></script>
+  <!-- <script src="js/getProductData.js"></script> -->
   <script src="js/getProductDetails.js"></script>
 
 </body>
