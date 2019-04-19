@@ -148,58 +148,35 @@
         </div>
         <!-- end divider -->
         <div class="container">
-       <h4><strong>Send Product<strong></h4>
+       <h4><strong>Uplaod Product<strong></h4>
           <form action="" method="post" role="form" class="contactForm">
             <div class="row">
-              <div id="alert_placeholder"></div>
-              <div class="span3 form-group">
                 Product Name*
-                <input id = 'productName' type="text" name="name" class="form-control " id="name" placeholder="Your Name"
-                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="span3 form-group">
+                <input id="productName" class="form-control" type="text" />
               Price*
-                <input  id = 'productPrice' class="form-control" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email" required/>
-                <div class="validation"></div>
-              </div>
-              <div class="span3 form-group">
+                <input  type="text" id="productPrice" class="form-control" required/>
               Quantity*
-                <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number"
-                  data-rule="minlen:10" data-msg="Please enter a valid phone number" required/>
-                <div class="validation"></div>
-              </div>
-              <div class="span12 form-group">
+                <input type="text" class="form-control" name="phone" id="productQuantity" required/>
               Category
-                <input  id = 'productCategory' type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
-                <div class="validation"></div>
-              </div>
-              <div class="span12 form-group">
+                <input  id="productCategory" type="text" class="form-control" required/>
+                 Brand
+                <input  id ="productBrand" type="text" class="form-control" required/>
               Description
-                <textarea  id = 'productDesc' class="form-control" id="message" rows="12" cols="179" name="message" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message" required></textarea>
-                <div class="validation"></div>
-                 <div class="span12 form-group">
+                <textarea  id="productDesc" class="form-control"></textarea>
+                </div>
               Image
-                 <input id='product' type="file" name="pic" accept="image/*">
-                 <input id= 'file' type="button" value ="upload Image" id="viewbtn" onclick="uploadImage();">
-                <div class="validation"></div>
-              </div>
+                 <input id='productImage' type="file" name="pic" accept="image/*">
+                 <input id= 'uploadImage' type="button" value ="upload Image" id="viewbtn" onclick="uploadImage();">
                 <p class="text-center">
                   <button class="btn btn-large btn-theme margintop10" onclick="submitProduct()" type="submit">Submit message</button>
                 </p>
-              </div>
-            </div>
-            <div class="span3">
-             <input id= 'file' type="button" value ="view Image" id="viewbtn" onclick="showimage();">
-              <img src="test" height="125px" width="200px"/>
-            </div>
-          </form>
+             <input  type="button" value ="Fetch Image" id="viewbtn" onclick="fetchImage();">
+             <input type="button" value ="Fetch Product" id="viewbtn" onclick="fetchProduct();">
+             <input  type="button" value ="Fetch Products" id="viewbtn" onclick="fetchProducts();">
+             <br>
+              <img id="imgPro" src="" height="125px" width="200px"/>
           </div>
         </div>
-      </div>
       <div class="container">
         <div class="row">
           <div class="span6">
