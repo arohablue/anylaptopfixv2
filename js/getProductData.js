@@ -24,7 +24,7 @@ document.getElementById('productAppender').innerHTML = productList;
 // onclick = functionName(array[Y].productId)
 function productDetail(productId){
 var product = Array();
-sessionStorage.setItem("id", productId);
+sessionStorage.setItem("id"+count , productId);
 location.href="portfolio-detail.html";
 } 
 function displayProductDetail(){
