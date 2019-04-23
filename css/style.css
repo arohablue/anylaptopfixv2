@@ -1073,6 +1073,26 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
   color: #555;
 }
 
+/* --- lpara --- */
+
+lpara {
+  font-size: 17px;
+   
+  padding-left: 0;
+  
+  border: none;
+}
+lhpara {
+  font-size: 20px;
+   
+  padding-left: 0;
+  
+  border: none;
+}
+
+
+
+
 /* --- pullquotes --- */
 
 .pullquote-left {
