@@ -37,7 +37,7 @@
   ======================================================= -->
 </head>
 
-<body onload="fetchProducts()">
+<body onload="fetchProducts('all')">
   <div id="wrapper">
     <!--floating social media  social-links-->
     
@@ -163,9 +163,9 @@
         <div class="row">
           <div class="span12">
             <ul class="portfolio-categ filter">
-              <li class="all active"><a>All</a></li>
+              <li class="all active"><a onclick="fetchProducts('all')" >All</a></li>
               <li class="Laptop"><a title="">Refurbished Laptops</a></li>
-              <li class="MOTHERBOARD"><a title="">Motherboards</a></li>
+              <li class="MOTHERBOARD"><a onclick="fetchProducts('motherboard')" title="">Motherboards</a></li>
               <li class="Adapters"><a title="">Adapters</a></li>
               <li class="CPU"><a title="">CPUs</a></li>
             </ul>
