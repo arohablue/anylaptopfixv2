@@ -3167,3 +3167,12 @@ video#vid {
     background: #467384;
     cursor: pointer;
   }
+
+  .card{
+    margin-top: 2px;
+    
+  }
+
+  input, textarea, .uneditable-input {
+    width: 300px;
+}
