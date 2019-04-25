@@ -8,6 +8,8 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
+  
+
   <!-- css -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" />
@@ -164,10 +166,10 @@
           <div class="span12">
             <ul class="portfolio-categ filter">
               <li class="all active"><a onclick="fetchProducts('all')" >All</a></li>
-              <li class="Laptop"><a title="">Refurbished Laptops</a></li>
+              <li class="Laptop"><a onclick="fetchProducts('laptop')" title="">Refurbished Laptops</a></li>
               <li class="MOTHERBOARD"><a onclick="fetchProducts('motherboard')" title="">Motherboards</a></li>
-              <li class="Adapters"><a title="">Adapters</a></li>
-              <li class="CPU"><a title="">CPUs</a></li>
+              <li class="Adapters"><a onclick="fetchProducts('adapters')" title="">Adapters</a></li>
+              <li class="CPU"><a onclick="fetchProducts('cpu')" title="">CPUs</a></li>
             </ul>
             <div class="clearfix">
             </div>
@@ -281,7 +283,8 @@
     <!-- Firebase JavaScript File -->
   <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
   <!-- Firebase Custom JavaScript File -->
-  <script src="js/firebase.js"></script>
+  
+  <script async src="js/firebase.js"></script>
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
