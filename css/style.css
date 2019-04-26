@@ -951,7 +951,7 @@ form#commentform textarea {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
-  cursor: pointer;
+  cursor: auto;
 }
 
 .item-thumbs a+img {

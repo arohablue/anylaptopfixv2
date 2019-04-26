@@ -79,11 +79,15 @@
             console.log(url);
            // imgLink = url;
            var Test = doc.id;
-           productList = '<li onclick="productDetail('+imgId+')" class="item-thumbs span3 design col-md-4 col-xs-6" data-id="id-0" data-type="'+doc.data().category+'"><a class="hover-wrap" data-fancybox-group="gallery" title="' + doc.data().name + '"><span class="overlay-img"></span><span class="overlay-img-thumb font-icon-plus"></span></a><img id="' + imgId + '" alt="' + doc.data().description + '"><div class="product-body"><h6 class="product-category">Category: '+doc.data().category+'</h6><h6 class="product-name">Name: '+doc.data().name+'</h6><h6 class="product-price">Price: ₹'+doc.data().price+'</h6></div></li>';
+           //productList = '<li onclick="productDetail('+imgId+')" class="item-thumbs span3 design col-md-4 col-xs-6" data-id="id-0" data-type="'+doc.data().category+'"><a class="hover-wrap" data-fancybox-group="gallery" title="' + doc.data().name + '"><span class="overlay-img"></span><span class="overlay-img-thumb font-icon-plus"></span></a><img class="productcard" id="' + imgId + '" alt="' + doc.data().description + '"><div class="product-body"><h6 class="product-category">Category: '+doc.data().category+'</h6><h6 class="product-name">Name: '+doc.data().name+'</h6><h6 class="product-price">Price: ₹'+doc.data().price+'</h6></div></li>';
+          productList = '<li onclick="productDetail('+imgId+')" class="item-thumbs span3 design " data-id="id-0" data-type="'+doc.data().category+'"><div class="span3"><article class="card-wrapper"><div class="image-holder"><a href="#" class="image-holder__link"></a><div id="' + imgId + '" class="image-liquid image-holder--original" ></div></div><div class="product-description"><!-- title --><h1 class="product-description__title"><a href="#">'+doc.data().name+'</a></h1><div class=" product-description__category secondary-text">'+doc.data().category+'</div><div class="product-description__price">₹'+doc.data().price+'</div><!-- divider --><hr /><div>'+doc.data().description+'</div></article></div></div></li>';
+
            console.log(doc.id, " => ", doc.data()); 
            $('#thumbs').load(document.URL + '#thumbs');
            document.getElementById('thumbs').innerHTML += productList;
-           document.querySelector("#" + imgId).src = url;  
+           //document.querySelector("#" + imgId).src = url;  
+           var URL = 'background-image: url('+url+');';
+           document.querySelector("#" + imgId).setAttribute("style",URL );
           });
         count++
       
