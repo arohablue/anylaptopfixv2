@@ -7,7 +7,11 @@
     storageBucket: "anylaptopfix-3ca9a.appspot.com",
     messagingSenderId: "978382312662"
   };
-  firebase.initializeApp(config);
+
+  if (!firebase.apps.length) {
+    firebase.initializeApp(config);
+}
+
   var db = firebase.firestore();
   function fetchImage(productId) {
     var storageRef = firebase.storage().ref();
