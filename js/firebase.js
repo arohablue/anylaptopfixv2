@@ -10,9 +10,10 @@
 
   if (!firebase.apps.length) {
     firebase.initializeApp(config);
+    var db = firebase.firestore();
 }
 
-  var db = firebase.firestore();
+ 
   function fetchImage(productId) {
     var storageRef = firebase.storage().ref();
     storageRef.child(productId).getDownloadURL().then(function (url) {
@@ -87,6 +88,7 @@
            //document.querySelector("#" + imgId).src = url;  
            var URL = 'background-image: url('+url+');';
            document.querySelector("#" + imgId).setAttribute("style",URL );
+           console.log(here)
           });
         count++
       
