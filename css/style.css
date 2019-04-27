@@ -3205,6 +3205,13 @@ video#vid {
     margin: 0;
     height: 530px;
   }
+
+
+  .image-holder{
+    width: 300px;
+    height: 300px;
+  }
+
   .portfolio-categ filter{
     background-color: #000;
     margin: 0.5px;
