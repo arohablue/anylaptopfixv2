@@ -34,7 +34,6 @@
   <!-- Theme skin -->
   <link href="skins/rose.css" rel="stylesheet" />
   <!-- boxed bg -->
-  <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
@@ -43,10 +42,10 @@
   <link rel="shortcut icon" href="ico/favicon.png" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+  <link href="css/productcard.css" rel="stylesheet" />
 </head>
 
-<body>
+<body onload="fetchProducts('all')">
   <div id="wrapper">
     <!--floating social media  social-links-->
 
@@ -157,7 +156,7 @@
         <div class="video-container">
 
           <!-- video  -->
-          <video id="vid" poster="polina.png" autoplay muted loop>
+          <video id="vid" poster="img/polina.png" autoplay muted loop>
             <source type="video/webm" src="img/stock.webm">
             <source type="video/mp4" src="img/stock.mp4">
           </video>
@@ -262,123 +261,16 @@
         </div>
       </div>
       <!-- end divider -->
-      <!-- Portfolio Projects -->
       <div class="row">
-        <div class="span12">
-          <h4 class="heading">Some of our <strong>products</strong></h4>
-          <div class="row">
-            <section id="projects">
+                <h4 class="heading">Some of our <strong>products</strong></h4>
+          <section id="projects">
               <ul id="thumbs" class="portfolio">
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City"
-                    href="img/products/product01.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product01.png"
-                    alt="Product 1">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 design" data-id="id-1" data-type="icon">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office"
-                    href="img/products/product02.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product02.png"
-                    alt="Product 2">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains"
-                    href="img/products/product03.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product03.png"
-                    alt="Product 3">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains"
-                    href="img/products/product04.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product04.png"
-                    alt="Product 4">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 photography" data-id="id-4" data-type="web">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea"
-                    href="img/products/product05.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product05.png"
-                    alt="Product 5">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 photography" data-id="id-5" data-type="icon">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds"
-                    href="img/products/product06.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product06.png"
-                    alt="Product 6">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains"
-                    href="img/products/ad1.jpeg">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/ad1.jpeg"
-                    alt="Adapter 1">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark"
-                    href="img/products/dell-dvd.jpg">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/dell-dvd.jpg"
-                    alt="Dell DVD">
-                </li>
-                <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <div id="productAppender"></div>
+                  <!-- End Item Project -->
               </ul>
-            </section>
-          </div>
+          </section>
         </div>
-      </div>
-      <!-- End Portfolio Projects -->
       <!-- divider -->
       <div class="row">
         <div class="span12">
@@ -553,6 +445,11 @@
   </footer>
   </div>
   <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+      <!-- Firebase JavaScript File -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <!-- Firebase Custom JavaScript File -->
+  
+  <script async src="js/firebase.js"></script>
   <!-- javascript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->

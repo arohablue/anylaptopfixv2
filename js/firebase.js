@@ -53,30 +53,25 @@
     var show=key;
     console.log(show);
     var fetch;
-    if(key=="all"){
-      fetch = db.collection("products").get();
+    switch(key) {
+      case "all": fetch = db.collection("products").get();
+            break;
+      case "Motherboard": fetch = db.collection("products").where("category", "==", "Motherboard").get();
+            break;
+      case "adapters": fetch =  fetch = db.collection("products").where("category", "==", "Adapters").get();
+            break;
+      case "laptop": fetch = db.collection("products").where("category", "==", "Laptop").get();
+            break;
+      case "laptop": fetch = db.collection("products").where("category", "==", "CPU").get();
+            break;
     }
-    else if(key=="motherboard"){
-      fetch = db.collection("products").where("category", "==", "Motherboard").get();
-    }
-    else if(key=="adapters"){
-      fetch = db.collection("products").where("category", "==", "Adapters").get();
-    }
-    else if(key=="laptop"){
-      fetch = db.collection("products").where("category", "==", "Laptop").get();
-    }
-    else if(key=="cpu"){
-      fetch = db.collection("products").where("category", "==", "CPU").get();
-    }
+
     fetch.then(function (querySnapshot) {
       querySnapshot.forEach(function (doc) {
-        console.log(doc);
         var imgId = doc.id;
         var imgLink ;
-        console.log(doc.id);
         var storageRef = firebase.storage().ref();
         storageRef.child(doc.id).getDownloadURL().then(function (url) {
-            console.log(url);
            // imgLink = url;
            var Test = doc.id;
            //productList = '<li onclick="productDetail('+imgId+')" class="item-thumbs span3 design col-md-4 col-xs-6" data-id="id-0" data-type="'+doc.data().category+'"><a class="hover-wrap" data-fancybox-group="gallery" title="' + doc.data().name + '"><span class="overlay-img"></span><span class="overlay-img-thumb font-icon-plus"></span></a><img class="productcard" id="' + imgId + '" alt="' + doc.data().description + '"><div class="product-body"><h6 class="product-category">Category: '+doc.data().category+'</h6><h6 class="product-name">Name: '+doc.data().name+'</h6><h6 class="product-price">Price: ₹'+doc.data().price+'</h6></div></li>';
@@ -108,10 +103,6 @@ function productDetail(product){
 function sorter(){
   sessionStorage.setItem("sorting", product.id);
 }
-
- document.getElementById("imageId").addEventListener("click", function storeInSession(event){
- console.log(this);   
-});
 
   function uploadImage(productId) {
     var storageRef = firebase.storage().ref(productId);
