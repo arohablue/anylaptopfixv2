@@ -18,17 +18,23 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
+  
+
   <!-- css -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700"
     rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
   <link href="css/jcarousel.css" rel="stylesheet" />
   <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/slitslider.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <!-- Theme skin -->
   <link href="skins/rose.css" rel="stylesheet" />
+  <!-- boxed bg -->
+  <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
@@ -38,6 +44,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+  <link href="css/productcard.css" rel="stylesheet" />
+
   <!-- =======================================================
     Theme Name: Flattern
     Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
@@ -46,7 +54,7 @@
   ======================================================= -->
 </head>
 
-<body onload="fetchProduct()">
+<body onload="fetchProducts('all')">
   <div id="wrapper">
     <!--floating social media  social-links-->
 
@@ -112,11 +120,11 @@
                       <ul class="dropdown-menu">
                         <li><a href="typography.html">Hard Disk Recovery</a></li>
 
-                            <li><a href="components.html">Pen Drive Recovery</a></li>
-                            <li><a href="icon-variations.html">RAID Recovery</a></li>
-  
-                        </ul>
-                      </li>
+                        <li><a href="components.html">Pen Drive Recovery</a></li>
+                        <li><a href="icon-variations.html">RAID Recovery</a></li>
+
+                      </ul>
+                    </li>
                     <li class="dropdown">
                       <a href="repair.html">Repair <i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
@@ -126,6 +134,56 @@
 
                       </ul>
                     </li>
+                    <li class="dropdown active">
+                      <a href="portfolio-4cols.html">Products<i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
+                        <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
+                        <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
+                        <li><a href="portfolio-detail.html">Portfolio detail</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="about.html">About us</a>
+
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- end navigation -->
+            </div>
+            <div class="span8">
+              <div class="navbar navbar-static-top">
+                <div class="navigation">
+                  <nav>
+                    <ul class="nav topnav">
+                      <li class="dropdown"><a href="index.html">Home <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="index-alt3.html">Home-2</a></li>
+                        </ul> 
+                      </li>
+                      <li class="dropdown">
+                        <a href="data-recovery.html">Data Recovery <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="hard-disk-recovery.html">Hard Disk Recovery</a></li>
+
+                            <li><a href="components.html">Pen Drive Recovery</a></li>
+                            <li><a href="icon-variations.html">RAID Recovery</a></li>
+  
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="repair.html">Repair <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="about.html">About us</a></li>
+                          <li><a href="pricingbox.html">Pricing boxes</a></li>
+                          <li><a href="testimonials.html">Testimonials</a></li>
+                          <li><a href="404.html">404</a></li>
+                        </ul>
+                      </li>
                       <li class="dropdown active">
                         <a href="products.html">Products<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
@@ -144,122 +202,118 @@
                       </li>
                     </ul>
                   </nav>
+                <p>
+                  Buy any available laptop at very affordable price, all our products are as good as new.
+                </p><br /><br />
+                <!-- <cite>Johny Doe Mblangsak</cite> -->
+                <div class="cta floatleft">
+                  <a class="btn btn-large btn-theme btn-rounded" href="product.html">Shop Now!</a>
                 </div>
-                <!-- end navigation -->
-              </div>
-              <!-- end navigation -->
+              </blockquote>
+
             </div>
           </div>
+          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15"
+            data-slice1-scale="1.5" data-slice2-scale="1.5">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-2">
+              </div>
+              <h2><strong>Repair</strong> electronics</h2>
+              <blockquote>
+                <p>
+                  Repair all of your electronics, don't worry about the brand just bring it on!
+                </p><br /><br />
+                <!-- <cite>Johny Doe Mblangsak</cite> -->
+                <div class="cta floatleft">
+                  <a class="btn btn-large btn-theme btn-rounded" href="product.html">Shop Now!</a>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3"
+            data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-3">
+              </div>
+              <h2><strong>Mac Book</strong> Repair</h2>
+              <blockquote>
+                <p>
+                  Get your Mac Book repaired at very affordable price from our expert technicians.
+                </p><br /><br />
+                <!-- <cite>Johny Doe Mblangsak</cite> -->
+                <div class="cta floatleft">
+                  <a class="btn btn-large btn-theme btn-rounded" href="product.html">Shop Now!</a>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+
         </div>
+        <!-- /sl-slider -->
+        <nav id="nav-dots" class="nav-dots">
+          <span class="nav-dot-current"></span>
+          <span></span>
+          <span></span>
+
+        </nav>
       </div>
-    </header>
-    <!-- end header -->
+      <!-- /slider-wrapper -->
+      <!-- end slider -->
+    </section>
+    <br />
+
+
     <section id="inner-headline">
       <div class="container">
         <div class="row">
           <div class="span4">
             <div class="inner-heading">
-              <h2>Product details</h2>
+              <h2>Deals for You!</h2>
             </div>
           </div>
           <div class="span8">
             <ul class="breadcrumb">
               <li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
-              <li><a href="#">Product</a><i class="icon-angle-right"></i></li>
-              <li class="active">Product details</li>
+              <li><a href="#">Products</a><i class="icon-angle-right"></i></li>
+              <li class="active">All</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <div id = "productDetails"></div>
-    <!-- <section id="content">
+
+
+
+
+    <section id="content">
       <div class="container">
         <div class="row">
-          <div class="span8">
-            <article>
-              <div class="top-wrapper">
-                <div class="post-heading">
-                  <h3><a href="#">Product Name</a></h3>
-                </div>
-                
-                <div class="flexslider">
-                  <ul class="slides">
-                    <li>
-                      <img src="img/works/full/image-01-full.jpg" alt="Product View 1" />
-                    </li>
-                    <li>
-                      <img src="img/works/full/image-02-full.jpg" alt="Product View 2" />
-                    </li>
-                    <li>
-                      <img src="img/works/full/image-03-full.jpg" alt="Product View 3" />
-                    </li>
-                  </ul>
-                </div>
-                
-              </div>
-              <p>
-                This is product description
-              </p>
-            </article>
-          </div>
-          <div class="span4">
-            <aside class="right-sidebar">
-              <div class="widget">
-                <h5 class="widgetheading">Product information</h5>
-                <ul class="folio-detail">
-                  <li><label>Product Name :</label> Dell Inspiron</li>
-                  <li><label>Brand :</label> Dell</li>
-                  <li><label>Category :</label> Laptop</li>
-                  <li><label>Information :</label> Lorem ipsum dolor sit amet, unum suscipiantur te cum</li>
+          <div class="span12">
+            <ul class="portfolio-categ filter">
+              <li class="all active"><a onclick="fetchProducts('all')" >All</a></li>
+              <li class="Laptop"><a onclick="fetchProducts('laptop')" title="">Refurbished Laptops</a></li>
+              <li class="MOTHERBOARD"><a onclick="fetchProducts('motherboard')" title="">Motherboards</a></li>
+              <li class="Adapters"><a onclick="fetchProducts('adapters')" title="">Adapters</a></li>
+              <li class="CPU"><a onclick="fetchProducts('cpu')" title="">CPUs</a></li>
+            </ul>
+            <div class="clearfix">
+            </div>
+            <div class="row">
+              <section id="projects">
+                <ul id="thumbs" class="portfolio">
+                  <!-- Item Project and Filter Name -->
+                  <div id="productAppender"></div>
+                  <!-- End Item Project -->
                 </ul>
-              </div>
-              <div class="widget">
-                <h5 class="widgetheading">Product Price</h5>
-                <p>
-                  this is specification.
-                </p>
-
-                
-                <div class="cta text-center">
-                  
-        
-                    <div class="span3">
-                      <div class="solidline">
-                      </div>
-                      </div>
-           
-                  <div class="card">
-                    <h5 class="card-header"><b>Interested? Contact Us! </b></h5>
-                    <div class="card-body">
-                      
-                      <p class="card-text">
-                        <form>
-                          <div class=" form-group">
-                            <label for="phonenumber">Phone Number</label>
-                            <input type="tel" class="form-control" id="phonenumber" aria-describedby="phonenumber" placeholder="eg : +9199868*****">
-                            
-                          </div>
-                          <div class="form-group">
-                            <label for="yourmessage">Message</label>
-                            <textarea type="text" class="form-control" rows="4" cols="179" id="yourmessage" placeholder="Your message to us."></textarea>
-                          </div>
-                          
-                          <button class="btn btn-large btn-theme btn-rounded" type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-
-                      </p>
-                      
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </aside>
+              </section>
+            </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
+
+
+
     <footer>
       <div class="container">
         <div class="row">
@@ -355,12 +409,12 @@
   <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
   <!-- javascript
     ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-
-  <!-- Firebase JavaScript File -->
+    <!-- Firebase JavaScript File -->
   <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
   <!-- Firebase Custom JavaScript File -->
-  <script src="js/firebase.js"></script>
+  
+  <script async src="js/firebase.js"></script>
+  <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/bootstrap.js"></script>
@@ -376,8 +430,6 @@
   <script src="js/jquery.ba-cond.min.js"></script>
   <script src="js/jquery.slitslider.js"></script>
   <script src="js/animate.js"></script>
-
-  <!-- Template Custom JavaScript File -->
   <script src="js/custom.js"></script>
   <!-- <script src="js/getProductData.js"></script> -->
   <script src="js/getProductDetails.js"></script>
