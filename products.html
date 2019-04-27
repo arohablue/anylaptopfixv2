@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138658166-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138658166-1');
+</script>
+
 <head>
   <meta charset="utf-8">
   <title>Any Laptop Fix</title>
@@ -11,13 +21,15 @@
   
 
   <!-- css -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700"
+    rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="css/bootstrap-responsive.css" rel="stylesheet" />
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
   <link href="css/jcarousel.css" rel="stylesheet" />
   <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/slitslider.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <!-- Theme skin -->
   <link href="skins/rose.css" rel="stylesheet" />
@@ -29,7 +41,8 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
   <link rel="shortcut icon" href="ico/favicon.png" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <link href="css/productcard.css" rel="stylesheet" />
 
@@ -44,7 +57,7 @@
 <body onload="fetchProducts('all')">
   <div id="wrapper">
     <!--floating social media  social-links-->
-    
+
     <div class="social">
         <a href="https://www.facebook.com/laptopfixpune" target="blank" title="Facebook" rel="noreferrer" ><i class="icon-facebook icon-32 icon-circled"></i></a>
         <br>
@@ -62,35 +75,85 @@
         <!--end floating social media-->
     <!-- toggle top area -->
     <div class="hidden-top">
-        <div class="hidden-top-inner container">
-          <div class="row">
-            <div class="span12">
-              <ul>
-                <li><strong>To fix all your laptop problems come to our lab </strong></li>
-                <li>SHOP NO 3, Behind Persistent company, Hinjewadi Rajiv Gandhi Infotech Park, Pune</li>
-                <li>Call us <i class="icon-phone"></i> +91 941 412 2001</li>
-              </ul>
-            </div>
+      <div class="hidden-top-inner container">
+        <div class="row">
+          <div class="span12">
+            <ul>
+              <li><strong>To fix all your laptop problems come to our lab </strong></li>
+              <li>SHOP NO 3, Behind Persistent company, Hinjewadi Rajiv Gandhi Infotech Park, Pune</li>
+              <li>Call us <i class="icon-phone"></i> +91 941 412 2001</li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- end toggle top area -->
+    </div>
+    <!-- end toggle top area -->
     <!-- start header -->
     <header>
-        <div class="container">
-          <!-- hidden top area toggle link -->
-          <div id="header-hidden-link">
-            <a href="#" class="toggle-link" title="Click me you'll get a surprise"
-              data-target=".hidden-top"><i></i>Open</a>
+      <div class="container">
+        <!-- hidden top area toggle link -->
+        <div id="header-hidden-link">
+          <a href="#" class="toggle-link" title="Click me you'll get a surprise"
+            data-target=".hidden-top"><i></i>Open</a>
+        </div>
+        <!-- end toggle link -->
+
+        <div class="row">
+          <div class="span4">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo-1.webp" alt="Any Laptop Fix logo" title="AnyLaptop Fix" class="logo" /></a>
+
+            </div>
           </div>
-          <!-- end toggle link -->
-          
-          <div class="row">
-            <div class="span4">
-              <div class="logo">
-                <a href="index.html"><img src="img/logo-s-03.png" alt="" class="logo" /></a>
-               
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                    <li class="dropdown"><a href="index.html">Home <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="index-alt3.html">Home-2</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="data-recovery.html">Data Recovery <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="typography.html">Hard Disk Recovery</a></li>
+
+                        <li><a href="components.html">Pen Drive Recovery</a></li>
+                        <li><a href="icon-variations.html">RAID Recovery</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="repair.html">Repair <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="laptop-repair.html">Laptop Repair</a></li>
+                        <li><a href="macbook-repair.html">Mac Book Repair</a></li>
+                        <li><a href="mobile-repair.html">Mobile Phone Repair</a></li>
+
+                      </ul>
+                    </li>
+                    <li class="dropdown active">
+                      <a href="portfolio-4cols.html">Products<i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
+                        <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
+                        <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
+                        <li><a href="portfolio-detail.html">Portfolio detail</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="about.html">About us</a>
+
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
+              <!-- end navigation -->
             </div>
             <div class="span8">
               <div class="navbar navbar-static-top">
@@ -105,7 +168,7 @@
                       <li class="dropdown">
                         <a href="data-recovery.html">Data Recovery <i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="typography.html">Hard Disk Recovery</a></li>
+                            <li><a href="hard-disk-recovery.html">Hard Disk Recovery</a></li>
 
                             <li><a href="components.html">Pen Drive Recovery</a></li>
                             <li><a href="icon-variations.html">RAID Recovery</a></li>
@@ -139,20 +202,73 @@
                       </li>
                     </ul>
                   </nav>
+                <p>
+                  Buy any available laptop at very affordable price, all our products are as good as new.
+                </p><br /><br />
+                <!-- <cite>Johny Doe Mblangsak</cite> -->
+                <div class="cta floatleft">
+                  <a class="btn btn-large btn-theme btn-rounded" href="product.html">Shop Now!</a>
                 </div>
-                <!-- end navigation -->
-              </div>
+              </blockquote>
+
             </div>
           </div>
+          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15"
+            data-slice1-scale="1.5" data-slice2-scale="1.5">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-2">
+              </div>
+              <h2><strong>Repair</strong> electronics</h2>
+              <blockquote>
+                <p>
+                  Repair all of your electronics, don't worry about the brand just bring it on!
+                </p><br /><br />
+                <!-- <cite>Johny Doe Mblangsak</cite> -->
+                <div class="cta floatleft">
+                  <a class="btn btn-large btn-theme btn-rounded" href="product.html">Shop Now!</a>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3"
+            data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-3">
+              </div>
+              <h2><strong>Mac Book</strong> Repair</h2>
+              <blockquote>
+                <p>
+                  Get your Mac Book repaired at very affordable price from our expert technicians.
+                </p><br /><br />
+                <!-- <cite>Johny Doe Mblangsak</cite> -->
+                <div class="cta floatleft">
+                  <a class="btn btn-large btn-theme btn-rounded" href="product.html">Shop Now!</a>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+
         </div>
-      </header>
-    <!-- end header -->
+        <!-- /sl-slider -->
+        <nav id="nav-dots" class="nav-dots">
+          <span class="nav-dot-current"></span>
+          <span></span>
+          <span></span>
+
+        </nav>
+      </div>
+      <!-- /slider-wrapper -->
+      <!-- end slider -->
+    </section>
+    <br />
+
+
     <section id="inner-headline">
       <div class="container">
         <div class="row">
           <div class="span4">
             <div class="inner-heading">
-              <h2>Products</h2>
+              <h2>Deals for You!</h2>
             </div>
           </div>
           <div class="span8">
@@ -165,6 +281,10 @@
         </div>
       </div>
     </section>
+
+
+
+
     <section id="content">
       <div class="container">
         <div class="row">
@@ -191,22 +311,25 @@
         </div>
       </div>
     </section>
+
+
+
     <footer>
-        <div class="container">
-          <div class="row">
-            <div class="span6">
-              <div class="widget">
-                <h5 class="widgetheading">Browse pages</h5>
-                <ul class="link-list">
-                  <li><a href="about.html">About our company</a></li>
-                  <li><a href="animations.html">Buy laptops</a></li>
-                  <li><a href="repair.html">Repair your electronics</a></li>
-                  <li><a href="data-recovery.html">Recover your data</a></li>
-                  <li><a href="contact.html">Get in touch with us</a></li>
-                </ul>
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="span6">
+            <div class="widget">
+              <h5 class="widgetheading">Browse pages</h5>
+              <ul class="link-list">
+                <li><a href="about.html">About our company</a></li>
+                <li><a href="animations.html">Buy laptops</a></li>
+                <li><a href="repair.html">Repair your electronics</a></li>
+                <li><a href="data-recovery.html">Recover your data</a></li>
+                <li><a href="contact.html">Get in touch with us</a></li>
+              </ul>
             </div>
-            <!-- <div class="span3">
+          </div>
+          <!-- <div class="span3">
               <div class="widget">
                 <h5 class="widgetheading">Important stuff</h5>
                 <ul class="link-list">
@@ -218,7 +341,7 @@
                 </ul>
               </div>
             </div> -->
-            <!-- <div class="span4">
+          <!-- <div class="span4">
               <div class="widget">
                 <h5 class="widgetheading">Flickr photostream</h5>
                 <div class="flickr_badge">
@@ -229,58 +352,59 @@
                 </div>
               </div>
             </div> -->
-            <div class="span6">
-              <div class="widget">
-                <h5 class="widgetheading">Get in touch with us</h5>
-                <address>
-                  <strong>Any Laptop Fix</strong><br>
-                  SHOP NO 3, Behind Persistent company, Hinjewadi Rajiv Gandhi Infotech Park, Pune
-                </address>
-                <p>
-                  <i class="icon-phone"></i> +91 941 412 2001 <br>
-                  <i class="icon-envelope-alt"></i>  tarunelitecomputer@gmail.com
-                </p>
-              </div>
+          <div class="span6">
+            <div class="widget">
+              <h5 class="widgetheading">Get in touch with us</h5>
+              <address>
+                <strong>Any Laptop Fix</strong><br>
+                SHOP NO 3, Behind Persistent company, Hinjewadi Rajiv Gandhi Infotech Park, Pune
+              </address>
+              <p>
+                <i class="icon-phone"></i> +91 941 412 2001 <br>
+                <i class="icon-envelope-alt"></i> tarunelitecomputer@gmail.com
+              </p>
             </div>
           </div>
         </div>
-        <div id="sub-footer">
-          <div class="container">
-            <div class="row">
-              <div class="span6">
-                <div class="copyright">
-                  <p>
-                    <span>&copy; Any Laptop Fix - All right reserved.</span>
-                  </p>
-                  <div class="credits">
-                    <!--
+      </div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <div class="copyright">
+                <p>
+                  <span>&copy; Any Laptop Fix - All right reserved.</span>
+                </p>
+                <div class="credits">
+                  <!--
                       All the links in the footer should remain intact.
                       You can delete the links only if you purchased the pro version.
                       Licensing information: https://bootstrapmade.com/license/
                       Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
                     
                     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
-                  </div>
                 </div>
               </div>
-              <div class="span6">
-                <ul class="social-network">
-                  <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a>
-                  </li>
-                  <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a>
-                  </li>
-                  <li><a href="https://www.linkedin.com/in/anylaptopfixpune/" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a>
-                  </li>
-                  <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a>
-                  </li>
-                  <li><a href="#" data-placement="bottom" title="Google plus"><i
-                        class="icon-google-plus icon-square"></i></a></li>
-                </ul>
-              </div>
+            </div>
+            <div class="span6">
+              <ul class="social-network">
+                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a>
+                </li>
+                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/anylaptopfixpune/" data-placement="bottom" title="Linkedin"><i
+                      class="icon-linkedin icon-square"></i></a>
+                </li>
+                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a>
+                </li>
+                <li><a href="#" data-placement="bottom" title="Google plus"><i
+                      class="icon-google-plus icon-square"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
   </div>
   <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
   <!-- javascript

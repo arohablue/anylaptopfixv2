@@ -1073,6 +1073,26 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
   color: #555;
 }
 
+/* --- lpara --- */
+
+lpara {
+  font-size: 17px;
+   
+  padding-left: 0;
+  
+  border: none;
+}
+lhpara {
+  font-size: 20px;
+   
+  padding-left: 0;
+  
+  border: none;
+}
+
+
+
+
 /* --- pullquotes --- */
 
 .pullquote-left {
@@ -1208,27 +1228,13 @@ ul.clients li {
   float: left;
   width: 155px;
   margin: 0;
-  border: 4px solid #e9e9e9;
+  
 }
 
-ul.clients li:hover {
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
 
 ul.clients li img {
   margin: 0;
   opacity: 0.8;
-}
-
-ul.clients li img:hover {
-  opacity: 1;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 
 /* --- Map --- */
@@ -3200,7 +3206,102 @@ video#vid {
     height: 530px;
   }
 
+
   .image-holder{
     width: 300px;
     height: 300px;
   }
+
+  .portfolio-categ filter{
+    background-color: #000;
+    margin: 0.5px;
+  }
+
+  
+  .widget .product-rating>i.fa-star {
+    color: #f2b632;
+  }
+
+  .widget .product-price {
+    color: #D10024;
+    font-size: 30px;
+  }
+  
+  .widget  .product-price .product-old-price {
+    font-size: 70%;
+    font-weight: 400;
+    color: #8D99AE;
+  }
+
+
+
+  .accordion-item {
+    transition: background, 500ms, ease-out;
+    background: #bbd2db;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .accordion-item:hover {
+    background: #89b1c1;
+  }
+  
+  .accordion-item.open {
+    background: #89b1c1;
+  }
+  
+  .accordion-item.open > .button > h3.accordion-heading {
+    font-weight: 700 !important;
+  }
+  
+  .accordion-heading {
+    transition: font-weight, 50ms, ease-in-out;
+    margin: 0.25rem 0;
+    padding: 0.75rem 0;
+    font-family: Helvetica;
+    font-weight: 100;
+    text-align: left;
+    cursor: pointer;
+  }
+  .accordion-heading:focus {
+    outline: 0;
+  }
+  
+  form {
+    padding: 0 1rem 1rem 1rem;
+  }
+  
+  label {
+    display: block;
+    padding: 0.5rem 0 0.25rem;
+  }
+  
+  input {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 97%;
+    padding: 0.25rem;
+  }
+  
+  div[type=submit] {
+    background: #5890a5;
+    color: #f3f3f3;
+    font-family: helvetica;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 1rem 0 0.5rem;
+  }
+  div[type=submit]:hover {
+    background: #467384;
+    cursor: pointer;
+  }
+
+  .card{
+    margin-top: 2px;
+    
+  }
+
+  input, textarea, .uneditable-input {
+    width: 300px;
+}
