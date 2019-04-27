@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138658166-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138658166-1');
+</script>
+
 <head>
   <meta charset="utf-8">
   <title>Any Laptop Fix</title>
@@ -9,6 +19,7 @@
   <meta name="author" content="AnylaptopFix" />
   <meta name="title"
     content="AnylaptopFix | It may take years to recover data from human memory, but we can recover your device's data within days." />
+  <link rel="canonical" href="https://anylaptopfix.com/homepage"/>
 
   <!-- css -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700"
@@ -23,7 +34,6 @@
   <!-- Theme skin -->
   <link href="skins/rose.css" rel="stylesheet" />
   <!-- boxed bg -->
-  <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
@@ -32,30 +42,28 @@
   <link rel="shortcut icon" href="ico/favicon.png" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+  <link href="css/productcard.css" rel="stylesheet" />
 </head>
 
-<body>
+<body onload="fetchProducts('all')">
   <div id="wrapper">
     <!--floating social media  social-links-->
 
     <div class="social">
-      <a href="https://www.facebook.com/laptopfixpune" target="blank" title="Facebook" rel="noreferrer"><i
-          class="icon-facebook icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://twitter.com/anylaptopfix" target="blank" title="Twitter" rel="noreferrer"><i
-          class="icon-twitter icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://www.linkedin.com/in/anylaptopfixpune/" target="blank" title="Linkedin" rel="noreferrer"><i
-          class="icon-linkedin icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://api.whatsapp.com/send?phone=+919158617272&text=Hello%20Elite%20Computer%27s%20I%27M%20Interested%20To(FIX%20LAPTOP)"
-        target="blank" title="Whatsapp" rel="noreferrer"><i class="fab fa-whatsapp icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://www.instagram.com/anylaptopfixservice/?hl=en" target="blank" title="Instagram"
-        rel="noreferrer"><i class="fab fa-instagram icon-32 icon-circled"></i></a>
-    </div>
-    <!--end floating social media-->
+        <a href="https://www.facebook.com/laptopfixpune" target="blank" title="Facebook" rel="noreferrer" ><i class="icon-facebook icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://twitter.com/anylaptopfix" target="blank" title="Twitter" rel="noreferrer" ><i class="icon-twitter icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://www.linkedin.com/in/anylaptopfixpune/" target="blank" title="Linkedin" rel="noreferrer"><i class="icon-linkedin icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://api.whatsapp.com/send?phone=+919158617272&text=Hello%20Elite%20Computer%27s%20I%27M%20Interested%20To(FIX%20LAPTOP)" target="blank" title="Whatsapp" rel="noreferrer" ><i class="fab fa-whatsapp icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://www.instagram.com/anylaptopfixservice/?hl=en" target="blank" title="Instagram" rel="noreferrer" ><i class="fab fa-instagram icon-32 icon-circled"></i></a>
+      </div>
+      <div class="callUs">
+        <a class=" btn-small btn-theme btn-rounded " href="#"><i class="icon-phone"></i><font color="white">Call Us +91 915 861 7272</font></a></div>
+      </div>
+      <!--end floating social media-->
 
     <!-- toggle top area -->
     <div class="hidden-top">
@@ -85,7 +93,7 @@
         <div class="row">
           <div class="span4">
             <div class="logo">
-              <a href="index.html"><img src="img/logo_n.png" alt="Any Laptop Fix logo" class="logo" /></a>
+              <a href="index.html"><img src="img/logo-1.webp" alt="Any Laptop Fix logo" title="AnyLaptop Fix" class="logo" /></a>
 
             </div>
           </div>
@@ -94,15 +102,12 @@
               <div class="navigation">
                 <nav>
                   <ul class="nav topnav">
-                    <li class="dropdown active"><a href="index.html">Home <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="index-alt3.html">Home-2</a></li>
-                      </ul>
+                    <li class="dropdown active"><a href="index.html">Home</a>
                     </li>
                     <li class="dropdown">
                       <a href="data-recovery.html">Data Recovery <i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
-                        <li><a href="typography.html">Hard Disk Recovery</a></li>
+                        <li><a href="hard-disk-recovery.html">Hard Disk Recovery</a></li>
 
                         <li><a href="components.html">Pen Drive Recovery</a></li>
                         <li><a href="icon-variations.html">RAID Recovery</a></li>
@@ -112,19 +117,19 @@
                     <li class="dropdown">
                       <a href="repair.html">Repair <i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
-                        <li><a href="about.html">Laptop Repair</a></li>
-                        <li><a href="pricingbox.html">Mac Book Repair</a></li>
-                        <li><a href="testimonials.html">Mobile Phone Repair</a></li>
-                        <li><a href="404.html">Iphone Repair</a></li>
+                        <li><a href="laptop-repair.html">Laptop Repair</a></li>
+                        <li><a href="macbook-repair.html">Mac Book Repair</a></li>
+                        <li><a href="mobile-repair.html">Mobile Phone Repair</a></li>
+
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="portfolio-4cols.html">Products<i class="icon-angle-down"></i></a>
+                      <a href="products.html">Products<i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
-                        <li><a href="portfolio-2cols.html">Mother Board</a></li>
-                        <li><a href="portfolio-3cols.html">Adapter</a></li>
-                        <li><a href="portfolio-4cols.html">Battery</a></li>
-                        <li><a href="portfolio-detail.html">SSD</a></li>
+                        <li><a href="404.html">Mother Board</a></li>
+                        <li><a href="404.html">Adapter</a></li>
+                        <li><a href="404.html">Battery</a></li>
+                        <li><a href="404.html">SSD</a></li>
                       </ul>
                     </li>
                     <li>
@@ -148,7 +153,7 @@
         <div class="video-container">
 
           <!-- video  -->
-          <video id="vid" poster="polina.png" autoplay muted loop>
+          <video id="vid" poster="img/polina.png" autoplay muted loop>
             <source type="video/webm" src="img/stock.webm">
             <source type="video/mp4" src="img/stock.mp4">
           </video>
@@ -253,123 +258,16 @@
         </div>
       </div>
       <!-- end divider -->
-      <!-- Portfolio Projects -->
       <div class="row">
-        <div class="span12">
-          <h4 class="heading">Some of our <strong>products</strong></h4>
-          <div class="row">
-            <section id="projects">
+                <h4 class="heading">Some of our <strong>products</strong></h4>
+          <section id="projects">
               <ul id="thumbs" class="portfolio">
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City"
-                    href="img/products/product01.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product01.png"
-                    alt="Product 1">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 design" data-id="id-1" data-type="icon">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office"
-                    href="img/products/product02.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product02.png"
-                    alt="Product 2">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains"
-                    href="img/products/product03.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product03.png"
-                    alt="Product 3">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains"
-                    href="img/products/product04.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product04.png"
-                    alt="Product 4">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 photography" data-id="id-4" data-type="web">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea"
-                    href="img/products/product05.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product05.png"
-                    alt="Product 5">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 photography" data-id="id-5" data-type="icon">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds"
-                    href="img/products/product06.png">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/product06.png"
-                    alt="Product 6">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains"
-                    href="img/products/ad1.jpeg">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/ad1.jpeg"
-                    alt="Adapter 1">
-                </li>
-                <!-- End Item Project -->
-                <!-- Item Project and Filter Name -->
-                <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
-                  <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                  <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark"
-                    href="img/products/dell-dvd.jpg">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-img-thumb font-icon-plus"></span>
-                  </a>
-                  <!-- Thumb Image and Description -->
-                  <img src="img/products/dell-dvd.jpg"
-                    alt="Dell DVD">
-                </li>
-                <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <div id="productAppender"></div>
+                  <!-- End Item Project -->
               </ul>
-            </section>
-          </div>
+          </section>
         </div>
-      </div>
-      <!-- End Portfolio Projects -->
       <!-- divider -->
       <div class="row">
         <div class="span12">
@@ -384,52 +282,52 @@
           <ul id="mycarousel" class="jcarousel-skin-tango recent-jcarousel clients">
             <li>
               <a href="#">
-                <img src="img/brand-logos/Acer-250x250.jpg" class="client-logo" alt="Acer logo" />
+                <img src="img/brand-logos/Acer-250x250.webp" class="client-logo" alt="Acer logo" title="Acer"/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/brand-logos/Amd-250x250.png" class="client-logo" alt="Amd logo" />
+                <img src="img/brand-logos/Amd-250x250.webp" class="client-logo" alt="Amd logo" title="Amd"/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/brand-logos/Asus-250x250.png" class="client-logo" alt="Asus logo" />
+                <img src="img/brand-logos/Asus-250x250.webp" class="client-logo" alt="Asus logo" title="Asus"/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/brand-logos/EPSON-Logo-250x250.jpg" class="client-logo" alt="EPSON logo" />
+                <img src="img/brand-logos/EPSON-Logo-250x250.webp" class="client-logo" alt="EPSON logo" title="EPSON"/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/brand-logos/Gigabyte-250x250.png" class="client-logo" alt="Gigabyte logo" />
+                <img src="img/brand-logos/Gigabyte-250x250.webp" class="client-logo" alt="Gigabyte logo" title="Gigabyte"/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/brand-logos/HP-Logo-250x250.jpg" class="client-logo" alt="HP logo" />
+                <img src="img/brand-logos/HP-Logo-250x250.webp" class="client-logo" alt="HP logo" title="HP"/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/brand-logos/Logo Kingston-250x250.png" class="client-logo" alt="Kingston logo" />
+                <img src="img/brand-logos/Logo Kingston-250x250.webp" class="client-logo" alt="Kingston logo" title="Kingston"/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/brand-logos/Logitech-250x250.png" class="client-logo" alt="Logitech logo" />
+                <img src="img/brand-logos/Logitech-250x250 (1).webp" class="client-logo" alt="Logitech logo" title="Logitech"/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/brand-logos/lenovo_logo_detail-250x250.png" class="client-logo" alt="Lenovo logo" />
+                <img src="img/brand-logos/lenovo_logo_detail-250x250.webp" class="client-logo" alt="Lenovo logo" title="Lenovo"/>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="img/brand-logos/Zebronic-250x250.jpeg" class="client-logo" alt="Zebronic logo" />
+                <img src="img/brand-logos/Zebronic-250x250.webp" class="client-logo" alt="Zebronic logo" title="Zebronic"/>
               </a>
             </li>
           </ul>
@@ -544,6 +442,11 @@
   </footer>
   </div>
   <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+      <!-- Firebase JavaScript File -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <!-- Firebase Custom JavaScript File -->
+  
+  <script async src="js/firebase.js"></script>
   <!-- javascript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
