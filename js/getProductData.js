@@ -25,7 +25,7 @@ document.getElementById('productAppender').innerHTML = productList;
 function productDetail(productId){
 var product = Array();
 sessionStorage.setItem("id"+count , productId);
-location.href="portfolio-detail.html";
+location.href="product-detail.html";
 } 
 function displayProductDetail(){
     prodId = sessionStorage.getItem("id");

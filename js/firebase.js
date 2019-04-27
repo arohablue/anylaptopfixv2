@@ -102,7 +102,7 @@
 function productDetail(product){
   console.log(product.id);
   sessionStorage.setItem("productId", product.id);
-  location.href = "portfolio-detail.html";
+  location.href = "product-detail.html";
 }
 
 function sorter(){
