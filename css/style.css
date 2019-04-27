@@ -3024,11 +3024,12 @@ video#vid {
   }
 
   .callUs {
-    height: 300px;
+  
     position: fixed;
     margin-top: 45%;
     perspective: 1000px;
     left: 0;
+    bottom: 0;
     z-index: 100;
     float: left;
     padding-bottom: 20px;
@@ -3036,7 +3037,7 @@ video#vid {
   }
   .callUs a{
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.6em;
     color: #696969;
