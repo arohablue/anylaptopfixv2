@@ -3199,3 +3199,8 @@ video#vid {
     margin: 0;
     height: 530px;
   }
+
+  .image-holder{
+    width: 300px;
+    height: 300px;
+  }
