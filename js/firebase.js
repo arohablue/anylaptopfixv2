@@ -26,6 +26,17 @@
     });
   }
 
+  function getImage(productId){
+  var storageRef = firebase.storage().ref();
+  console.log("fetching image")
+  storageRef.child(productId).getDownloadURL().then(function (url) {
+  //document.querySelector("#" + imgId).src = url;  
+    var URL = 'background-image: url('+url+');';
+    document.querySelector("#" + productId).setAttribute("style",URL );
+    console.log("here")
+    });
+  }
+
 
   function fetchProduct() {
     console.log("called");
@@ -73,25 +84,15 @@
 
     fetch.then(function (querySnapshot) {
       querySnapshot.forEach(function (doc) {
-        var imgId = doc.id;
-        var imgLink ;
-        var storageRef = firebase.storage().ref();
-        storageRef.child(doc.id).getDownloadURL().then(function (url) {
-           // imgLink = url;
-           var Test = doc.id;
-           //productList = '<li onclick="productDetail('+imgId+')" class="item-thumbs span3 design col-md-4 col-xs-6" data-id="id-0" data-type="'+doc.data().category+'"><a class="hover-wrap" data-fancybox-group="gallery" title="' + doc.data().name + '"><span class="overlay-img"></span><span class="overlay-img-thumb font-icon-plus"></span></a><img class="productcard" id="' + imgId + '" alt="' + doc.data().description + '"><div class="product-body"><h6 class="product-category">Category: '+doc.data().category+'</h6><h6 class="product-name">Name: '+doc.data().name+'</h6><h6 class="product-price">Price: ₹'+doc.data().price+'</h6></div></li>';
-          productList = '<li onclick="productDetail('+imgId+')" class="item-thumbs span3 design " data-id="id-0" data-type="'+doc.data().category+'"><div><article class="card-wrapper" ><div class="image-holder" style="width: 100%; height: 60%; float:center;"><a href="#" class="image-holder__link" ></a><div id="' + imgId + '" class="image-liquid image-holder--original"  ></div></div><div class="product-description"><!-- title --><h1 class="product-description__title"><a href="#">'+doc.data().name+'</a></h1><div class=" product-description__category secondary-text">'+doc.data().category+'</div><div class="product-description__price">₹'+doc.data().price+'</div><!-- divider --><hr /><div>'+doc.data().specification+'</div></article></div></div></li>';
+        var url =getImage(doc.id);
+        console.log(url);
+                     //productList = '<li onclick="productDetail('+imgId+')" class="item-thumbs span3 design col-md-4 col-xs-6" data-id="id-0" data-type="'+doc.data().category+'"><a class="hover-wrap" data-fancybox-group="gallery" title="' + doc.data().name + '"><span class="overlay-img"></span><span class="overlay-img-thumb font-icon-plus"></span></a><img class="productcard" id="' + imgId + '" alt="' + doc.data().description + '"><div class="product-body"><h6 class="product-category">Category: '+doc.data().category+'</h6><h6 class="product-name">Name: '+doc.data().name+'</h6><h6 class="product-price">Price: ₹'+doc.data().price+'</h6></div></li>';
+                     productList = '<li onclick="productDetail('+doc.id+')" class="item-thumbs span3 design " data-id="id-0" data-type="'+doc.data().category+'"><div><article class="card-wrapper" ><div class="image-holder" style="width: 100%; height: 60%; float:center;"><a href="#" class="image-holder__link" ></a><div id="' + doc.id + '" class="image-liquid image-holder--original"  ></div></div><div class="product-description"><!-- title --><h1 class="product-description__title"><a href="#">'+doc.data().name+'</a></h1><div class=" product-description__category secondary-text">'+doc.data().category+'</div><div class="product-description__price">₹'+doc.data().price+'</div><!-- divider --><hr /><div>'+doc.data().specification+'</div></article></div></div></li>';
 
-           console.log(doc.id, " => ", doc.data()); 
-           $('#thumbs').load(document.URL + '#thumbs');
-           document.getElementById('thumbs').innerHTML += productList;
-           //document.querySelector("#" + imgId).src = url;  
-           var URL = 'background-image: url('+url+');';
-           document.querySelector("#" + imgId).setAttribute("style",URL );
-           console.log(here)
-          });
-        count++
-      
+                     console.log(doc.id, " => ", doc.data()); 
+                     $('#thumbs').load(document.URL + '#thumbs');
+                     document.getElementById('thumbs').innerHTML += productList;
+                     count++
       });
       
     }).catch(function (error) {
