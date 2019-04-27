@@ -56,13 +56,13 @@
     switch(key) {
       case "all": fetch = db.collection("products").get();
             break;
-      case "Motherboard": fetch = db.collection("products").where("category", "==", "Motherboard").get();
+      case "motherboard": fetch = db.collection("products").where("category", "==", "Motherboard").get();
             break;
       case "adapters": fetch =  fetch = db.collection("products").where("category", "==", "Adapters").get();
             break;
       case "laptop": fetch = db.collection("products").where("category", "==", "Laptop").get();
             break;
-      case "laptop": fetch = db.collection("products").where("category", "==", "CPU").get();
+      case "cpu": fetch = db.collection("products").where("category", "==", "CPU").get();
             break;
     }
 
