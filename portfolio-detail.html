@@ -36,27 +36,25 @@
   ======================================================= -->
 </head>
 
-<body>
+<body onload="fetchProduct()">
   <div id="wrapper">
     <!--floating social media  social-links-->
 
     <div class="social">
-      <a href="https://www.facebook.com/laptopfixpune" target="blank" title="Facebook" rel="noreferrer"><i
-          class="icon-facebook icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://twitter.com/anylaptopfix" target="blank" title="Twitter" rel="noreferrer"><i
-          class="icon-twitter icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://www.linkedin.com/in/anylaptopfixpune/" target="blank" title="Linkedin" rel="noreferrer"><i
-          class="icon-linkedin icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://api.whatsapp.com/send?phone=+919158617272&text=Hello%20Elite%20Computer%27s%20I%27M%20Interested%20To(FIX%20LAPTOP)"
-        target="blank" title="Whatsapp" rel="noreferrer"><i class="fab fa-whatsapp icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://www.instagram.com/anylaptopfixservice/?hl=en" target="blank" title="Instagram"
-        rel="noreferrer"><i class="fab fa-instagram icon-32 icon-circled"></i></a>
-    </div>
-    <!--end floating social media-->
+        <a href="https://www.facebook.com/laptopfixpune" target="blank" title="Facebook" rel="noreferrer" ><i class="icon-facebook icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://twitter.com/anylaptopfix" target="blank" title="Twitter" rel="noreferrer" ><i class="icon-twitter icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://www.linkedin.com/in/anylaptopfixpune/" target="blank" title="Linkedin" rel="noreferrer"><i class="icon-linkedin icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://api.whatsapp.com/send?phone=+919158617272&text=Hello%20Elite%20Computer%27s%20I%27M%20Interested%20To(FIX%20LAPTOP)" target="blank" title="Whatsapp" rel="noreferrer" ><i class="fab fa-whatsapp icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://www.instagram.com/anylaptopfixservice/?hl=en" target="blank" title="Instagram" rel="noreferrer" ><i class="fab fa-instagram icon-32 icon-circled"></i></a>
+      </div>
+      <div class="callUs">
+          <a title="Call Us" rel="noreferrer" ><i class=" icon-phone-sign icon-64 icon-circled"></i>Call us</a>
+      </div>
+        <!--end floating social media-->
     <!-- toggle top area -->
     <div class="hidden-top">
       <div class="hidden-top-inner container">
@@ -104,11 +102,11 @@
                       <ul class="dropdown-menu">
                         <li><a href="typography.html">Hard Disk Recovery</a></li>
 
-                        <li><a href="components.html">Pen Drive Recovery</a></li>
-                        <li><a href="icon-variations.html">RAID Recovery</a></li>
-
-                      </ul>
-                    </li>
+                            <li><a href="components.html">Pen Drive Recovery</a></li>
+                            <li><a href="icon-variations.html">RAID Recovery</a></li>
+  
+                        </ul>
+                      </li>
                     <li class="dropdown">
                       <a href="repair.html">Repair <i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
@@ -118,24 +116,26 @@
 
                       </ul>
                     </li>
-                    <li class="dropdown active">
-                      <a href="portfolio-4cols.html">Products<i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
-                        <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
-                        <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
-                        <li><a href="portfolio-detail.html">Portfolio detail</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="about.html">About us</a>
-
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact </a>
-                    </li>
-                  </ul>
-                </nav>
+                      <li class="dropdown active">
+                        <a href="products.html">Products<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
+                          <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
+                          <li><a href="products.html">Portfolio 4 columns</a></li>
+                          <li><a href="portfolio-detail.html">Portfolio detail</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="about.html">About us</a>
+                        
+                      </li>
+                      <li>
+                        <a href="contact.html">Contact </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- end navigation -->
               </div>
               <!-- end navigation -->
             </div>
@@ -149,20 +149,21 @@
         <div class="row">
           <div class="span4">
             <div class="inner-heading">
-              <h2>Product detail</h2>
+              <h2>Product details</h2>
             </div>
           </div>
           <div class="span8">
             <ul class="breadcrumb">
               <li><a href="#"><i class="icon-home"></i></a><i class="icon-angle-right"></i></li>
-              <li><a href="portfolio-4cols.html">Product</a><i class="icon-angle-right"></i></li>
-              <li class="active">Product Detail</li>
+              <li><a href="#">Product</a><i class="icon-angle-right"></i></li>
+              <li class="active">Product details</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section id="content">
+    <div id = "productDetails"></div>
+    <!-- <section id="content">
       <div class="container">
         <div class="row">
           <div class="span8">
@@ -171,7 +172,7 @@
                 <div class="post-heading">
                   <h3><a href="#">Product Name</a></h3>
                 </div>
-                <!-- start flexslider -->
+                
                 <div class="flexslider">
                   <ul class="slides">
                     <li>
@@ -185,46 +186,11 @@
                     </li>
                   </ul>
                 </div>
-                <!-- end flexslider-->
-
                 
-
-
               </div>
-              <div class="accordion" id="accordion2">
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                      1. Description </a>
-                  </div>
-                  <div id="collapseOne" class="accordion-body collapse in">
-                    <div class="accordion-inner">
-                      <p>
-                        We believe ourselves on fast, quality laptop repairs and servicing, with most being completed
-                        within 1-2 days and with reasonable price. We assign our best engineers to make sure we provide
-                        you with the best services.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                      2. Feature </a>
-                  </div>
-                  <div id="collapseTwo" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                      <p>
-                        Our work process is simple. You contact us through our contact us page and we will definitely
-                        get
-                        back to you with the appropriate solution. We will provide you with all the data specifically
-                        suitable for you if you send us the right query.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+              <p>
+                This is product description
+              </p>
             </article>
           </div>
           <div class="span4">
@@ -241,24 +207,7 @@
               <div class="widget">
                 <h5 class="widgetheading">Product Price</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, unum suscipiantur te cum, vide magna ea eam. At eos wisi tractatos
-                  temporibus.
-                  <div>
-                    <div class="product-rating">
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-o"></i>
-                    </div>
-
-                  </div>
-
-
-                  <div>
-                    <h3 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h3>
-                    <span class="product-available">In Stock</span>
-                  </div>
+                  this is specification.
                 </p>
 
                 
@@ -300,7 +249,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <footer>
       <div class="container">
         <div class="row">
@@ -397,6 +346,11 @@
   <!-- javascript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
+
+  <!-- Firebase JavaScript File -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <!-- Firebase Custom JavaScript File -->
+  <script src="js/firebase.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/bootstrap.js"></script>
@@ -415,6 +369,8 @@
 
   <!-- Template Custom JavaScript File -->
   <script src="js/custom.js"></script>
+  <!-- <script src="js/getProductData.js"></script> -->
+  <script src="js/getProductDetails.js"></script>
 
 </body>
 

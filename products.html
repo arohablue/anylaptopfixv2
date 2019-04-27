@@ -8,11 +8,14 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
+  
+
   <!-- css -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700"
     rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
   <link href="css/jcarousel.css" rel="stylesheet" />
   <link href="css/flexslider.css" rel="stylesheet" />
@@ -20,6 +23,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- Theme skin -->
   <link href="skins/rose.css" rel="stylesheet" />
+  <!-- boxed bg -->
+  <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
@@ -29,6 +34,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+  <link href="css/productcard.css" rel="stylesheet" />
+
   <!-- =======================================================
     Theme Name: Flattern
     Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
@@ -37,27 +44,25 @@
   ======================================================= -->
 </head>
 
-<body>
+<body onload="fetchProducts('all')">
   <div id="wrapper">
     <!--floating social media  social-links-->
 
     <div class="social">
-      <a href="https://www.facebook.com/laptopfixpune" target="blank" title="Facebook" rel="noreferrer"><i
-          class="icon-facebook icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://twitter.com/anylaptopfix" target="blank" title="Twitter" rel="noreferrer"><i
-          class="icon-twitter icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://www.linkedin.com/in/anylaptopfixpune/" target="blank" title="Linkedin" rel="noreferrer"><i
-          class="icon-linkedin icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://api.whatsapp.com/send?phone=+919158617272&text=Hello%20Elite%20Computer%27s%20I%27M%20Interested%20To(FIX%20LAPTOP)"
-        target="blank" title="Whatsapp" rel="noreferrer"><i class="fab fa-whatsapp icon-32 icon-circled"></i></a>
-      <br>
-      <a href="https://www.instagram.com/anylaptopfixservice/?hl=en" target="blank" title="Instagram"
-        rel="noreferrer"><i class="fab fa-instagram icon-32 icon-circled"></i></a>
-    </div>
-    <!--end floating social media-->
+        <a href="https://www.facebook.com/laptopfixpune" target="blank" title="Facebook" rel="noreferrer" ><i class="icon-facebook icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://twitter.com/anylaptopfix" target="blank" title="Twitter" rel="noreferrer" ><i class="icon-twitter icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://www.linkedin.com/in/anylaptopfixpune/" target="blank" title="Linkedin" rel="noreferrer"><i class="icon-linkedin icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://api.whatsapp.com/send?phone=+919158617272&text=Hello%20Elite%20Computer%27s%20I%27M%20Interested%20To(FIX%20LAPTOP)" target="blank" title="Whatsapp" rel="noreferrer" ><i class="fab fa-whatsapp icon-32 icon-circled"></i></a>
+        <br>
+        <a href="https://www.instagram.com/anylaptopfixservice/?hl=en" target="blank" title="Instagram" rel="noreferrer" ><i class="fab fa-instagram icon-32 icon-circled"></i></a>
+      </div>
+      <div class="callUs">
+          <a title="Call Us" rel="noreferrer" ><i class=" icon-phone-sign icon-64 icon-circled"></i>Call us</a>
+      </div>
+        <!--end floating social media-->
     <!-- toggle top area -->
     <div class="hidden-top">
       <div class="hidden-top-inner container">
@@ -158,6 +163,38 @@
               <h2><strong>Buy</strong> Laptops</h2>
               <blockquote>
 
+                            <li><a href="components.html">Pen Drive Recovery</a></li>
+                            <li><a href="icon-variations.html">RAID Recovery</a></li>
+  
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="repair.html">Repair <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="about.html">About us</a></li>
+                          <li><a href="pricingbox.html">Pricing boxes</a></li>
+                          <li><a href="testimonials.html">Testimonials</a></li>
+                          <li><a href="404.html">404</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown active">
+                        <a href="products.html">Products<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
+                          <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
+                          <li><a href="products.html">Portfolio 4 columns</a></li>
+                          <li><a href="portfolio-detail.html">Portfolio detail</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="about.html">About us</a>
+                        
+                      </li>
+                      <li>
+                        <a href="contact.html">Contact </a>
+                      </li>
+                    </ul>
+                  </nav>
                 <p>
                   Buy any available laptop at very affordable price, all our products are as good as new.
                 </p><br /><br />
@@ -246,10 +283,11 @@
         <div class="row">
           <div class="span12">
             <ul class="portfolio-categ filter">
-              <li class="all active"><a href="#">All</a></li>
-              <li class="web"><a href="#" title="">Refurbished Laptops</a></li>
-              <li class="icon"><a href="#" title="">Motherboards</a></li>
-              <li class="graphic"><a href="#" title="">Adapters</a></li>
+              <li class="all active"><a onclick="fetchProducts('all')" >All</a></li>
+              <li class="Laptop"><a onclick="fetchProducts('laptop')" title="">Refurbished Laptops</a></li>
+              <li class="MOTHERBOARD"><a onclick="fetchProducts('motherboard')" title="">Motherboards</a></li>
+              <li class="Adapters"><a onclick="fetchProducts('adapters')" title="">Adapters</a></li>
+              <li class="CPU"><a onclick="fetchProducts('cpu')" title="">CPUs</a></li>
             </ul>
             <div class="clearfix">
             </div>
@@ -257,108 +295,7 @@
               <section id="projects">
                 <ul id="thumbs" class="portfolio">
                   <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name"
-                      href="img/products/Dell.jpg">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/products/Dell.jpg"
-                      alt="Dell Product">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 design" data-id="id-1" data-type="icon">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name"
-                      href="img/products/acer.jpg">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/products/acer.jpg"
-                      alt="Acer Product">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 photography" data-id="id-2" data-type="graphic">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name"
-                      href="img/products/dell2.jpg">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/products/dell2.jpg"
-                      alt="Dell Product">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name"
-                      href="img/products/hp.jpg">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/products/hp.jpg"
-                      alt="HP Product">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 photography" data-id="id-4" data-type="web">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name"
-                      href="portfolio-detail.html">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/products/lenovo.jpg"
-                      alt="Lenovo Product">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 photography" data-id="id-5" data-type="icon">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name"
-                      href="portfolio-detail.html">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/products/mac-screen.jpg"
-                      alt="Mac">
-                  </li>
-                  <!-- End Item Project -->
-                  <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name"
-                      href="portfolio-detail.html">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/products/macbook.jpg"
-                      alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 design" data-id="id-0" data-type="graphic">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio "
-                      href="portfolio-detail.html">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/products/predator.jpg"
-                      alt="predator" 
-                       >
-                  </li>
+                  <div id="productAppender"></div>
                   <!-- End Item Project -->
                 </ul>
               </section>
@@ -465,6 +402,11 @@
   <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
   <!-- javascript
     ================================================== -->
+    <!-- Firebase JavaScript File -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <!-- Firebase Custom JavaScript File -->
+  
+  <script async src="js/firebase.js"></script>
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
@@ -481,9 +423,9 @@
   <script src="js/jquery.ba-cond.min.js"></script>
   <script src="js/jquery.slitslider.js"></script>
   <script src="js/animate.js"></script>
-
-  <!-- Template Custom JavaScript File -->
   <script src="js/custom.js"></script>
+  <!-- <script src="js/getProductData.js"></script> -->
+  <script src="js/getProductDetails.js"></script>
 
 </body>
 
