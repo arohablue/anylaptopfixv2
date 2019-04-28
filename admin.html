@@ -29,7 +29,6 @@
   <!-- Theme skin -->
   <link href="skins/rose.css" rel="stylesheet" />
   <!-- boxed bg -->
-  <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
@@ -60,6 +59,9 @@
         <a href="https://api.whatsapp.com/send?phone=+919158617272&text=Hello%20Elite%20Computer%27s%20I%27M%20Interested%20To(FIX%20LAPTOP)" target="blank" title="Whatsapp" rel="noreferrer" ><i class="fab fa-whatsapp icon-32 icon-circled"></i></a>
         <br>
         <a href="https://www.instagram.com/anylaptopfixservice/?hl=en" target="blank" title="Instagram" rel="noreferrer" ><i class="fab fa-instagram icon-32 icon-circled"></i></a>
+      </div>
+      <div class="callUs">
+        <a class=" btn-small btn-theme btn-rounded " href="#"><i class="icon-phone"></i><font color="white">Call Us +91 915 861 7272</font></a></div>
       </div>
         <!--end floating social media-->
     <!-- toggle top area -->
@@ -99,18 +101,16 @@
               <div class="navigation">
                 <nav>
                   <ul class="nav topnav">
-                    <li class="dropdown"><a href="index.html">Home <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="index-alt3.html">Home-2</a></li>
-                      </ul> 
+                    <li class="dropdown"><a href="index.html">Home</a>
+ 
                     </li>
                     <li class="dropdown">
                       <a href="data-recovery.html">Data Recovery <i class="icon-angle-down"></i></a>
                       <ul class="dropdown-menu">
                           <li><a href="hard-disk-recovery.html">Hard Disk Recovery</a></li>
 
-                          <li><a href="components.html">Pen Drive Recovery</a></li>
-                          <li><a href="icon-variations.html">RAID Recovery</a></li>
+                          <li><a href="404.html">Pen Drive Recovery</a></li>
+                          <li><a href="404.html">RAID Recovery</a></li>
 
                       </ul>
                     </li>
@@ -124,30 +124,29 @@
                         </ul>
                       </li>
                       <li class="dropdown">
-                        <a href="portfolio-4cols.html">Products<i class="icon-angle-down"></i></a>
+                        <a href="products.html">Products<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                           <li><a href="portfolio-2cols.html">Mother Board</a></li>
                           <li><a href="portfolio-3cols.html">Adapter</a></li>
-                          <li><a href="portfolio-4cols.html">Battery</a></li>
-                          <li><a href="portfolio-detail.html">SSD</a></li>
+                          <li><a href="products.html">Battery</a></li>
+                          <li><a href="product-detail.html">SSD</a></li>
                         </ul>
                       </li>
-                    <li class="active">
-                      <a href="about.html">About us</a>
-                      
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact </a>
-                    </li>
-                  </ul>
-                </nav>
+                      <li>
+                        <a href="about.html">About us</a>
+                      </li>
+                      <li>
+                        <a href="contact.html">Contact </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- end navigation -->
               </div>
-              <!-- end navigation -->
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
     <!-- end header -->
    
           <div class="span12">
@@ -166,94 +165,123 @@
                 <input  type="text" id="productPrice" class="form-control" required/>
               Quantity*
                 <input type="text" class="form-control" name="phone" id="productQuantity" required/>
-              Category
-                <input  id="productCategory" type="text" class="form-control" required/>
-                 Brand
+              Category*
+                <!-- <input  id="productCategory" name="category" type="text" class="form-control" list="catList" required/> -->
+                <!-- <datalist id="catList"> -->
+                  <br>
+                    <select id="productCategory" name="category" type="text" class="form-control" list="catList" required>
+                      <option selected value="Motherboard">Motherboard</option>
+                      <option value="Adapters">Adapters</option>
+                      <option value="Laptop">Laptop</option>
+                      <option value="CPU">CPU</option>
+                    </select>
+                    <br>
+                  <!-- </datalist> -->
+                 Brand*
                 <input  id ="productBrand" type="text" class="form-control" required/>
               Product Specification*
               <input type="text" class="form-control" id="productSpecification" required/>
-              Description
+              Description*
                 <textarea  id="productDesc" class="form-control"></textarea>
                 </div>
-              Image
+              Image*
                  <input id='productImage' type="file" name="pic" accept="image/*">
                  <input id= 'uploadImage' type="button" value ="upload Image" id="viewbtn" onclick="uploadImage();">
                 <p class="text-center">
-                  <button class="btn btn-large btn-theme margintop10" onclick="submitProduct()" type="submit">Submit message</button>
-                </p>
-             <input  type="button" value ="Fetch Image" id="viewbtn" onclick="fetchImage();">
-             <input type="button" value ="Fetch Product" id="viewbtn" onclick="fetchProduct();">
-             <input  type="button" value ="Fetch Products" id="viewbtn" onclick="fetchProducts();">
-             <br>
-              <img id="imgPro" src="" height="125px" width="200px"/>
+                  <button class="btn btn-large btn-theme margintop10" onclick="submitProduct()" type="submit">Upload</button>
+                </p>   
           </div>
         </div>
-      <div class="container">
-        <div class="row">
-          <div class="span6">
-            <div class="widget">
-              <h5 class="widgetheading">Browse pages</h5>
-              <ul class="link-list">
-                <li><a href="about.html">About our company</a></li>
-                <li><a href="animations.html">Buy laptops</a></li>
-                <li><a href="repair.html">Repair your electronics</a></li>
-                <li><a href="data-recovery.html">Recover your data</a></li>
-                <li><a href="contact.html">Get in touch with us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="span6">
-            <div class="widget">
-              <h5 class="widgetheading">Get in touch with us</h5>
-              <address>
-                <strong>Any Laptop Fix</strong><br>
-                SHOP NO 3, Behind Persistent company, Hinjewadi Rajiv Gandhi Infotech Park, Pune
-              </address>
-              <p>
-                <i class="icon-phone"></i> +91 915 861 7272 <br>
-                <i class="icon-envelope-alt"></i>  anylaptopfix@gmail.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="sub-footer">
-        <div class="container">
-          <div class="row">
-            <div class="span6">
-              <div class="copyright">
-                <p>
-                  <span>&copy; Any Laptop Fix - All right reserved.</span>
-                </p>
-                <div class="credits">
-                  <!--
-                    All the links in the footer should remain intact.
-                    You can delete the links only if you purchased the pro version.
-                    Licensing information: https://bootstrapmade.com/license/
-                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
-                  
-                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="span6">
+                  <div class="widget">
+                    <h5 class="widgetheading">Browse pages</h5>
+                    <ul class="link-list">
+                      <li><a href="about.html">About our company</a></li>
+                      <li><a href="404.html">Buy laptops</a></li>
+                      <li><a href="repair.html">Repair your electronics</a></li>
+                      <li><a href="data-recovery.html">Recover your data</a></li>
+                      <li><a href="contact.html">Get in touch with us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- <div class="span3">
+                  <div class="widget">
+                    <h5 class="widgetheading">Important stuff</h5>
+                    <ul class="link-list">
+                      <li><a href="#">Press release</a></li>
+                      <li><a href="#">Terms and conditions</a></li>
+                      <li><a href="#">Privacy policy</a></li>
+                      <li><a href="#">Career center</a></li>
+                      <li><a href="#">Flattern forum</a></li>
+                    </ul>
+                  </div>
+                </div> -->
+                <!-- <div class="span4">
+                  <div class="widget">
+                    <h5 class="widgetheading">Flickr photostream</h5>
+                    <div class="flickr_badge">
+                      <script type="text/javascript"
+                        src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+                    </div>
+                    <div class="clear">
+                    </div>
+                  </div>
+                </div> -->
+                <div class="span6">
+                  <div class="widget">
+                    <h5 class="widgetheading">Get in touch with us</h5>
+                    <address>
+                      <strong>Any Laptop Fix</strong><br>
+                      SHOP NO 3, Behind Persistent company, Hinjewadi Rajiv Gandhi Infotech Park, Pune
+                    </address>
+                    <p>
+                      <i class="icon-phone"></i> +91 915 861 7272 <br>
+                      <i class="icon-envelope-alt"></i>  anylaptopfix@gmail.com
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="span6">
-              <ul class="social-network">
-                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a>
-                </li>
-                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/anylaptopfixpune/" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a>
-                </li>
-                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a>
-                </li>
-                <li><a href="#" data-placement="bottom" title="Google plus"><i
-                      class="icon-google-plus icon-square"></i></a></li>
-              </ul>
+            <div id="sub-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="span6">
+                    <div class="copyright">
+                      <p>
+                        <span>&copy; Any Laptop Fix - All right reserved.</span>
+                      </p>
+                      <div class="credits">
+                        <!--
+                          All the links in the footer should remain intact.
+                          You can delete the links only if you purchased the pro version.
+                          Licensing information: https://bootstrapmade.com/license/
+                          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
+                        
+                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="span6">
+                    <ul class="social-network">
+                      <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a>
+                      </li>
+                      <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a>
+                      </li>
+                      <li><a href="https://www.linkedin.com/in/anylaptopfixpune/" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a>
+                      </li>
+                      <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a>
+                      </li>
+                      <li><a href="#" data-placement="bottom" title="Google plus"><i
+                            class="icon-google-plus icon-square"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+          </footer>
   </div>
   <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
 
