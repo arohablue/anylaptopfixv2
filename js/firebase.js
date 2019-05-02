@@ -1,4 +1,16 @@
+var config = {
+  apiKey: "AIzaSyAIC3dXjQqbZtqUWdu3NjYqW6oGlje2r9U",
+  authDomain: "anylaptopfix-3ca9a.firebaseapp.com",
+  databaseURL: "https://anylaptopfix-3ca9a.firebaseio.com",
+  projectId: "anylaptopfix-3ca9a",
+  storageBucket: "anylaptopfix-3ca9a.appspot.com",
+  messagingSenderId: "978382312662"
+};
 
+if (!firebase.apps.length) {
+  firebase.initializeApp(config);
+  var db = firebase.firestore();
+}
   function fetchImage(productId) {
     var storageRef = firebase.storage().ref();
     storageRef.child(productId).getDownloadURL().then(function (url) {
@@ -72,11 +84,11 @@
             break;
           }
 
-    $('#thumbs').load(document.URL + '#thumbs', function (){
+       $('#projects').append('<ul id="thumbs" class="portfolio"></ul>');
       fetch.then(function (querySnapshot) {
         fetchMyProducts(querySnapshot);
         });
-    });
+    
 }
 
 function fetchMyProducts(querySnapshot) {
