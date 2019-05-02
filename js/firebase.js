@@ -1,7 +1,4 @@
-
-
-  if (!firebase.apps.length) {
-      // Initialize Firebase
+  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAIC3dXjQqbZtqUWdu3NjYqW6oGlje2r9U",
     authDomain: "anylaptopfix-3ca9a.firebaseapp.com",
@@ -10,6 +7,8 @@
     storageBucket: "anylaptopfix-3ca9a.appspot.com",
     messagingSenderId: "978382312662"
   };
+
+  if (!firebase.apps.length) {
     firebase.initializeApp(config);
     var db = firebase.firestore();
 }
@@ -30,7 +29,15 @@
   function getImage(productId){
   var storageRef = firebase.storage().ref();
   console.log("fetching image")
-  return storageRef.child(productId).getDownloadURL();
+  storageRef.child(productId).getDownloadURL().then(function (url) {
+  //document.querySelector("#" + imgId).src = url;  
+    var URL = 'background-image: url('+url+');';
+    console.log("image fetched")
+    productList = '<li onclick="productDetail('+doc.id+')" class="item-thumbs span3 design " data-id="id-0" data-type="'+doc.data().category+'"><div><article class="card-wrapper" ><div class="image-holder" style="width: 100%; height: 60%; float:center;"><a href="#" class="image-holder__link" ></a><div id="' + doc.id + '" class="image-liquid image-holder--original"  ></div></div><div class="product-description"><!-- title --><h1 class="product-description__title"><a href="#">'+doc.data().name+'</a></h1><div class=" product-description__category secondary-text">'+doc.data().category+'</div><div class="product-description__price">₹'+doc.data().price+'</div><!-- divider --><hr /><div>'+doc.data().specification+'</div></article></div></div></li>';
+    console.log(doc.id, " => ", doc.data()); 
+    document.getElementById('thumbs').innerHTML += productList;
+    document.querySelector("#" + productId).setAttribute("style",URL );
+    });
   }
 
 
@@ -78,22 +85,10 @@
 
     $('#thumbs').load(document.URL + '#thumbs');
     fetch.then(function (querySnapshot) {
-
+      
       querySnapshot.forEach(function (doc) {
-        var url =getImage(doc.id).then(function (url) {
-          //document.querySelector("#" + imgId).src = url;  
-            var URL = 'background-image: url('+url+');';
-            console.log("doc:"+doc.id);
-            //productList = '<li onclick="productDetail('+imgId+')" class="item-thumbs span3 design col-md-4 col-xs-6" data-id="id-0" data-type="'+doc.data().category+'"><a class="hover-wrap" data-fancybox-group="gallery" title="' + doc.data().name + '"><span class="overlay-img"></span><span class="overlay-img-thumb font-icon-plus"></span></a><img class="productcard" id="' + imgId + '" alt="' + doc.data().description + '"><div class="product-body"><h6 class="product-category">Category: '+doc.data().category+'</h6><h6 class="product-name">Name: '+doc.data().name+'</h6><h6 class="product-price">Price: ₹'+doc.data().price+'</h6></div></li>';
-            productList = '<li onclick="productDetail('+doc.id+')" class="item-thumbs span3 design " data-id="id-0" data-type="'+doc.data().category+'"><div><article class="card-wrapper" ><div class="image-holder" style="width: 100%; height: 60%; float:center;"><a href="#" class="image-holder__link" ></a><div id="' + doc.id + '" class="image-liquid image-holder--original"  ></div></div><div class="product-description"><!-- title --><h1 class="product-description__title"><a href="#">'+doc.data().name+'</a></h1><div class=" product-description__category secondary-text">'+doc.data().category+'</div><div class="product-description__price">₹'+doc.data().price+'</div><!-- divider --><hr /><div>'+doc.data().specification+'</div></article></div></div></li>';
-            console.log(doc.id, " => ", doc.data()); 
-            document.getElementById('thumbs').innerHTML += productList;
-
-            document.querySelector("#" + doc.id).setAttribute("style",URL );
-            console.log("image fetched")
-
-            });
-
+        var url =getImage(doc.id);
+        console.log("doc:"+doc.id);
       });
       
     }).catch(function (error) {
