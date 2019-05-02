@@ -82,6 +82,7 @@
             break;
     }
 
+    $('#thumbs').load(document.URL + '#thumbs');
     fetch.then(function (querySnapshot) {
       querySnapshot.forEach(function (doc) {
         var url =getImage(doc.id);
@@ -90,7 +91,6 @@
                      productList = '<li onclick="productDetail('+doc.id+')" class="item-thumbs span3 design " data-id="id-0" data-type="'+doc.data().category+'"><div><article class="card-wrapper" ><div class="image-holder" style="width: 100%; height: 60%; float:center;"><a href="#" class="image-holder__link" ></a><div id="' + doc.id + '" class="image-liquid image-holder--original"  ></div></div><div class="product-description"><!-- title --><h1 class="product-description__title"><a href="#">'+doc.data().name+'</a></h1><div class=" product-description__category secondary-text">'+doc.data().category+'</div><div class="product-description__price">₹'+doc.data().price+'</div><!-- divider --><hr /><div>'+doc.data().specification+'</div></article></div></div></li>';
 
                      console.log(doc.id, " => ", doc.data()); 
-                     $('#thumbs').load(document.URL + '#thumbs');
                      document.getElementById('thumbs').innerHTML += productList;
                      count++
       });
