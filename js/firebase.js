@@ -26,17 +26,17 @@
     });
   }
 
-  function getImage(productId){
+  function getImage(doc){
   var storageRef = firebase.storage().ref();
   console.log("fetching image")
-  storageRef.child(productId).getDownloadURL().then(function (url) {
+  storageRef.child(doc.id).getDownloadURL().then(function (url) {
   //document.querySelector("#" + imgId).src = url;  
     var URL = 'background-image: url('+url+');';
     console.log("image fetched")
     productList = '<li onclick="productDetail('+doc.id+')" class="item-thumbs span3 design " data-id="id-0" data-type="'+doc.data().category+'"><div><article class="card-wrapper" ><div class="image-holder" style="width: 100%; height: 60%; float:center;"><a href="#" class="image-holder__link" ></a><div id="' + doc.id + '" class="image-liquid image-holder--original"  ></div></div><div class="product-description"><!-- title --><h1 class="product-description__title"><a href="#">'+doc.data().name+'</a></h1><div class=" product-description__category secondary-text">'+doc.data().category+'</div><div class="product-description__price">₹'+doc.data().price+'</div><!-- divider --><hr /><div>'+doc.data().specification+'</div></article></div></div></li>';
     console.log(doc.id, " => ", doc.data()); 
     document.getElementById('thumbs').innerHTML += productList;
-    document.querySelector("#" + productId).setAttribute("style",URL );
+    document.querySelector("#" + doc.id).setAttribute("style",URL );
     });
   }
 
@@ -67,7 +67,8 @@
 
 
   function fetchProducts(key) {
-    var productList ;
+    console.log("It works !");
+   /* var productList ;
     console.log(key);
     var fetch;
     switch(key) {
@@ -87,13 +88,13 @@
     fetch.then(function (querySnapshot) {
       
       querySnapshot.forEach(function (doc) {
-        var url =getImage(doc.id);
+        var url =getImage(doc);
         console.log("doc:"+doc.id);
       });
       
     }).catch(function (error) {
         console.log("Error getting Products:", error);
-       });
+       }); */
 }
 
 
