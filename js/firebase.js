@@ -68,7 +68,7 @@
 
   function fetchProducts(key) {
     console.log("It works !");
-   /* var productList ;
+    var productList ;
     console.log(key);
     var fetch;
     switch(key) {
@@ -85,6 +85,7 @@
     }
 
     $('#thumbs').load(document.URL + '#thumbs');
+    /*
     fetch.then(function (querySnapshot) {
       
       querySnapshot.forEach(function (doc) {
