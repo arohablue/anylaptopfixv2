@@ -72,12 +72,11 @@
             break;
           }
 
-    $('#thumbs').load(document.URL + '#thumbs');
-    
-    fetch.then(function (querySnapshot) {
-      fetchMyProducts(querySnapshot);
-      });
-      
+    $('#thumbs').load(document.URL + '#thumbs', function (){
+      fetch.then(function (querySnapshot) {
+        fetchMyProducts(querySnapshot);
+        });
+    });
 }
 
 function fetchMyProducts(querySnapshot) {
