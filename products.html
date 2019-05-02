@@ -49,6 +49,25 @@
 </head>
 
 <body>
+    <!-- Firebase JavaScript File -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-storage.js"></script>
+  <script>
+    var config = {
+    apiKey: "AIzaSyAIC3dXjQqbZtqUWdu3NjYqW6oGlje2r9U",
+    authDomain: "anylaptopfix-3ca9a.firebaseapp.com",
+    databaseURL: "https://anylaptopfix-3ca9a.firebaseio.com",
+    projectId: "anylaptopfix-3ca9a",
+    storageBucket: "anylaptopfix-3ca9a.appspot.com",
+    messagingSenderId: "978382312662"
+  };
+
+  if (!firebase.apps.length) {
+    firebase.initializeApp(config);
+    var db = firebase.firestore();
+  }
+  </script>
   <div id="wrapper">
     <!--floating social media  social-links-->
 
@@ -296,10 +315,6 @@
   <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
   <!-- javascript
     ================================================== -->
-    <!-- Firebase JavaScript File -->
-  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-storage.js"></script>
 
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.js"></script>
