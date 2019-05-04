@@ -35,6 +35,7 @@
   <link href="css/flexslider.css" rel="stylesheet" />
   <link href="css/slitslider.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/flexnav.css" rel="stylesheet" type="text/css" />
   <!-- Theme skin -->
   <link href="skins/rose.css" rel="stylesheet" />
   <!-- boxed bg -->
@@ -104,8 +105,9 @@
           <div class="span8">
             <div class="navbar navbar-static-top">
               <div class="navigation">
+                <div id="navigation"> <div class="menu-button">Menu</div>
                 <nav>
-                  <ul class="nav topnav">
+                  <ul class="nav topnav flexnav" data-breakpoint="800">
                     <li class="dropdown active"><a href="index.html">Home</a>
                     </li>
                     <li class="dropdown">
@@ -143,6 +145,7 @@
                       <a href="contact.html">Contact </a>
                     </li>
                   </ul>
+                
                 </nav>
               </div>
               <!-- end navigation -->
@@ -562,11 +565,14 @@ The window first came into general use as part of the Apple Macintosh. Later, Mi
   <script src="js/jquery.ba-cond.min.js"></script>
   <script src="js/jquery.slitslider.js"></script>
   <script src="js/animate.js"></script>
+  
 
   <!-- Template Custom JavaScript File -->
   <script src="js/custom.js"></script>
    <!-- Firebase Custom JavaScript File -->
   <script src="js/firebase.js"></script>
+  <script type="text/javascript" src="js/jquery.flexnav.min.js"></script>
+  <script> $(".flexnav").flexNav({ 'animationSpeed' : 'fast' });</script> 
 
 </body>
 

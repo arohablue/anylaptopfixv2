@@ -3,35 +3,36 @@ jQuery(document).ready(function($) {
   "use strict";
 
 
-  (function() {
+  // (function() {
 
-    var $menu = $('.navigation nav'),
-      optionsList = '<option value="" selected>Go to..</option>';
+  //   var $menu = $('.navigation nav'),
+  //     optionsList = '<option value="" selected>Go to..</option>';
 
-    $menu.find('li').each(function() {
-        var $this = $(this),
-          $anchor = $this.children('a'),
-          depth = $this.parents('ul').length - 1,
-          indent = '';
+  //   $menu.find('li').each(function() {
+  //       var $this = $(this),
+  //         $anchor = $this.children('a'),
+  //         depth = $this.parents('ul').length - 1,
+  //         indent = '';
 
-        if (depth) {
-          while (depth > 0) {
-            indent += ' - ';
-            depth--;
-          }
+  //       if (depth) {
+  //         while (depth > 0) {
+  //           indent += ' - ';
+  //           depth--;
+  //         }
 
-        }
-        $(".nav li").parent().addClass("bold");
+  //       }
+  //       $(".nav li").parent().addClass("bold");
 
-        optionsList += '<option value="' + $anchor.attr('href') + '">' + indent + ' ' + $anchor.text() + '</option>';
-      }).end()
-      .after('<select class="selectmenu">' + optionsList + '</select>');
+  //       //optionsList += '<option value="' + $anchor.attr('href') + '">' + indent + ' ' + $anchor.text() + '</option>';
+  //       optionsList +='<li><a href="' + $anchor.attr('href') + '">' + indent + ' ' + $anchor.text() +'</a></li>';
+  //     }).end()
+  //     .after('<ul class="nav topnav">' + optionsList + '</ul>');
 
-    $('select.selectmenu').on('change', function() {
-      window.location = $(this).val();
-    });
+  //   $('select.selectmenu').on('change', function() {
+  //     window.location = $(this).val();
+  //   });
 
-  })();
+  // })();
 
 
   $('.toggle-link').each(function() {
