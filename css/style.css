@@ -2315,18 +2315,22 @@ article img.pull-right, article .align-right {
   nav ul li {
     display: none;
   }
-  /* select.selectmenu {
+  select.selectmenu {
     display: block;
     width: 100%;
     margin-bottom: 20px;
-    color: #111;
+    color: #fff;
+    background: #9E001D;
     margin-right: 20px;
     line-height: 30px;
-    font-size: 13px;
+    font-size: 18px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    border-radius:12px
   }
   select.selectmenu .bold {
     font-weight: bold;
-  } */
+  }
   .box {
     border-bottom: 1px solid #e9e9e9;
     padding-bottom: 20px;
