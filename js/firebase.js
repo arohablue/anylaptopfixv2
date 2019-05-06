@@ -24,9 +24,9 @@ if (!firebase.apps.length) {
   }
 
   function getImage(doc){
-  var storageRef = firebase.storage().ref();
-  storageRef.child(doc.id).getDownloadURL().then(function (url) {
-  //document.querySelector("#" + imgId).src = url;  
+    var storageRef = firebase.storage().ref();
+    storageRef.child(doc.id).getDownloadURL().then(function (url) {
+    //document.querySelector("#" + imgId).src = url;  
     var URL = 'background-image: url('+url+');';
     productList = '<li onclick="productDetail('+doc.id+')" class="item-thumbs span3 design " data-id="id-0" data-type="'+doc.data().category+'"><div><article class="card-wrapper" ><div class="image-holder" style="width: 100%; height: 60%; float:center;"><a href="#" class="image-holder__link" ></a><div id="' + doc.id + '" class="image-liquid image-holder--original"  ></div></div><div class="product-description"><!-- title --><h1 class="product-description__title"><a href="#">'+doc.data().name+'</a></h1><div class=" product-description__category secondary-text">'+doc.data().category+'</div><div class="product-description__price">₹'+doc.data().price+'</div><!-- divider --><hr /><div>'+doc.data().specification+'</div></article></div></div></li>';
     document.getElementById('thumbs').innerHTML += productList;
@@ -58,8 +58,6 @@ if (!firebase.apps.length) {
 
 
   function fetchProducts(key) {
-      // Initialize Firebase
-    
     var productList ;
     var fetch;
     switch(key) {
@@ -74,13 +72,11 @@ if (!firebase.apps.length) {
       case "cpu": fetch = db.collection("products").where("category", "==", "CPU").get();
             break;
           }
-
+       $('#thumbs').html("");
        $('#projects').append('<ul id="thumbs" class="portfolio"></ul>');
       fetch.then(function (querySnapshot) {
         fetchMyProducts(querySnapshot);
         });
-      $('#thumbs').html("");
-    
 }
 
 function fetchMyProducts(querySnapshot) {
