@@ -24,14 +24,11 @@ if (!firebase.apps.length) {
   }
 
   function getImage(doc){
-  var storageRef = firebase.storage().ref();
-  console.log("fetching image")
-  storageRef.child(doc.id).getDownloadURL().then(function (url) {
-  //document.querySelector("#" + imgId).src = url;  
+    var storageRef = firebase.storage().ref();
+    storageRef.child(doc.id).getDownloadURL().then(function (url) {
+    //document.querySelector("#" + imgId).src = url;  
     var URL = 'background-image: url('+url+');';
-    console.log("image fetched")
     productList = '<li onclick="productDetail('+doc.id+')" class="item-thumbs span3 design " data-id="id-0" data-type="'+doc.data().category+'"><div><article class="card-wrapper" ><div class="image-holder" style="width: 100%; height: 60%; float:center;"><a href="#" class="image-holder__link" ></a><div id="' + doc.id + '" class="image-liquid image-holder--original"  ></div></div><div class="product-description"><!-- title --><h1 class="product-description__title"><a href="#">'+doc.data().name+'</a></h1><div class=" product-description__category secondary-text">'+doc.data().category+'</div><div class="product-description__price">₹'+doc.data().price+'</div><!-- divider --><hr /><div>'+doc.data().specification+'</div></article></div></div></li>';
-    console.log(doc.id, " => ", doc.data()); 
     document.getElementById('thumbs').innerHTML += productList;
     document.querySelector("#" + doc.id).setAttribute("style",URL );
     });
@@ -39,13 +36,10 @@ if (!firebase.apps.length) {
 
 
   function fetchProduct() {
-    console.log("called");
     var productId = sessionStorage.getItem("productId");
-    console.log(productId);
     var docRef = db.collection("products").doc(productId);
     docRef.get().then(function (doc) {
        if (doc.exists) {
-        console.log("Product data:", doc.data());
         var storageRef = firebase.storage().ref();
         storageRef.child(productId).getDownloadURL().then(function (url) {
           var test = url;
@@ -64,12 +58,7 @@ if (!firebase.apps.length) {
 
 
   function fetchProducts(key) {
-      // Initialize Firebase
-  
-
-    console.log("It works !");
     var productList ;
-    console.log(key);
     var fetch;
     switch(key) {
       case "all": fetch = db.collection("products").get();
@@ -83,26 +72,21 @@ if (!firebase.apps.length) {
       case "cpu": fetch = db.collection("products").where("category", "==", "CPU").get();
             break;
           }
-
+       $('#thumbs').html("");
        $('#projects').append('<ul id="thumbs" class="portfolio"></ul>');
       fetch.then(function (querySnapshot) {
         fetchMyProducts(querySnapshot);
         });
-    
 }
 
 function fetchMyProducts(querySnapshot) {
-  console.log("I'm Here")
   querySnapshot.forEach(function (doc) {
     var url = getImage(doc);
-    console.log("doc:"+doc.id);
-
   });
 }
 
 
 function productDetail(product){
-  console.log(product.id);
   sessionStorage.setItem("productId", product.id);
   location.href = "product-detail.html";
 }

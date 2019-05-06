@@ -5,105 +5,64 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
 <url>
   <loc>https://www.anylaptopfix.com/</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.anylaptopfix.com/index.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/index.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.anylaptopfix.com/data-recovery.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.anylaptopfix.com/hard-disk-recovery.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.anylaptopfix.com/404.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/404.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.anylaptopfix.com/repair.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.anylaptopfix.com/laptop-repair.html</loc>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.anylaptopfix.com/macbook-repair.html</loc>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.anylaptopfix.com/mobile-repair.html</loc>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.anylaptopfix.com/products.html</loc>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.anylaptopfix.com/about.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/pricingbox.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/testimonials.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/404.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/404.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/404.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/404.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/product-detail.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.anylaptopfix.com/contact.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
+  <lastmod>2019-05-05T09:46:40+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/404.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/blog-left-sidebar.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.anylaptopfix.com/blog-right-sidebar.html</loc>
-  <lastmod>2019-04-17T19:00:16+00:00</lastmod>
-  <priority>0.64</priority>
 </url>
 </urlset>

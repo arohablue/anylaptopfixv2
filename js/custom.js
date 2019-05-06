@@ -6,24 +6,26 @@ jQuery(document).ready(function($) {
   (function() {
 
     var $menu = $('.navigation nav'),
-      optionsList = '<option value="" selected>Go to..</option>';
+      optionsList;// = '<option value="" selected>Go to..</option>';
 
     $menu.find('li').each(function() {
         var $this = $(this),
           $anchor = $this.children('a'),
           depth = $this.parents('ul').length - 1,
-          indent = '';
+          indent = '',
+          spacing = '';
 
         if (depth) {
           while (depth > 0) {
-            indent += ' - ';
+            indent = '15px';
+            spacing +=' - '
             depth--;
           }
 
         }
         $(".nav li").parent().addClass("bold");
 
-        optionsList += '<option value="' + $anchor.attr('href') + '">' + indent + ' ' + $anchor.text() + '</option>';
+        optionsList += '<option style="font-size:' + indent + '" value="' + $anchor.attr('href') + '">' + spacing +' '+ $anchor.text() + '</option>';
       }).end()
       .after('<select class="selectmenu">' + optionsList + '</select>');
 
