@@ -43,8 +43,8 @@ function sendSms() {
             Host: "smtp.elasticemail.com",
             Username: "sunigkale@gmail.com",
             Password: "916da204-a59c-477b-b6e9-93927d6680b2",
-            To: email,
-            From: "sunigkale@gmail.com",
+            To: "anylaptopfix@gmail.com",
+            From: email,
             Subject: subject,
             Body: finalEmail
         }).then(
