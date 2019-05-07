@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
   (function() {
 
     var $menu = $('.navigation nav'),
-      optionsList;// = '<option value="" selected>Go to..</option>';
+      optionsList = '<option value="" selected>Menu</option>';
 
     $menu.find('li').each(function() {
         var $this = $(this),
