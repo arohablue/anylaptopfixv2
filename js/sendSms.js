@@ -1,4 +1,5 @@
 function sendSms() {
+    console.log("Bol bc");
 
     bootstrap_alert = function () { }           //Alert Messages
     bootstrap_alert.warning = function (message)     {
@@ -30,7 +31,7 @@ function sendSms() {
         var settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://www.fast2sms.com/dev/bulk?authorization=Ql4F9ruTKWmcPONnEY1CVqsDfpIvk7XMRUAG2i6otZyzjaH05BkRvUPgVcWmpsAM097FCB2LytGr1lNI&sender_id=FSTSMS&message=" + finalMessage + "&language=english&route=p&numbers=9049696198,8421878407",
+            "url": "https://www.fast2sms.com/dev/bulk?authorization=Ql4F9ruTKWmcPONnEY1CVqsDfpIvk7XMRUAG2i6otZyzjaH05BkRvUPgVcWmpsAM097FCB2LytGr1lNI&sender_id=FSTSMS&message=" + finalMessage + "&language=english&route=p&numbers=9049696198",
             "method": "GET",
         }
         $.ajax(settings).done(function (response) {         //Ajax Call to SMS Api

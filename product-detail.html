@@ -165,6 +165,48 @@
       </div>
     </section>
     <div id = "productDetails"></div>
+    <div class="solidline"></div>
+    <div class="container">
+        <h4><strong>Send Enquiry<strong></h4>
+           <form action="" method="post" role="form" class="contactForm">
+             <div class="row">
+               <div id="alert_placeholder"></div>
+               <div class="span3 form-group">
+                 Name*
+                 <input type="text" name="name" class="form-control " id="name" placeholder="Your Name"
+                   data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                 <div class="validation"></div>
+               </div>
+               <div class="span3 form-group">
+               Email Address*
+                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                   data-rule="email" data-msg="Please enter a valid email" required/>
+                 <div class="validation"></div>
+               </div>
+               <div class="span3 form-group">
+               Phone Number*
+                 <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number"
+                   data-rule="minlen:10" data-msg="Please enter a valid phone number" required/>
+                 <div class="validation"></div>
+               </div>
+               <div class="span12 form-group">
+               Subject
+                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                   data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
+                 <div class="validation"></div>
+               </div>
+               <div class="span12 form-group">
+               Message
+                 <textarea class="form-control" id="message" rows="12" cols="179" name="message" data-rule="required"
+                   data-msg="Please write something for us" placeholder="Message" required></textarea>
+                 <div class="validation"></div>
+                 <p class="text-center">
+                   <button class="btn btn-large btn-theme margintop10" onclick="sendSms()" type="button">Submit message</button>
+                 </p>
+               </div>
+             </div>
+           </form>
+           </div>
     <footer>
       <div class="container">
         <div class="row">
@@ -262,19 +304,22 @@
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
 
+ 
   <!-- Firebase JavaScript File -->
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-storage.js"></script>
 
 <script src="js/site-js.js"></script>
-
   <!-- Template Custom JavaScript File -->
   <script src="js/custom.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="js/sendSms.js"></script>
   <!-- <script src="js/getProductData.js"></script> -->
   <script src="js/getProductDetails.js"></script>
     <!-- Firebase Custom JavaScript File -->
   <script src="js/firebase.js"></script>
+  
 
 </body>
 
