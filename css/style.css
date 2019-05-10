@@ -3368,12 +3368,13 @@ video#vid {
 
 /* Style the dropdown content (hidden by default) */
 .topnav .dropdown-content {
+  margin-top: 40px;
   display: none;
   position: fixed;
   background-color: #f9f9f9;
   min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 10;
+  z-index: 1000;
 }
 
 /* Style the links inside the dropdown */
@@ -3427,7 +3428,9 @@ video#vid {
     text-align: left;
   }
   .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown-content {
+    margin-top: 0px;
+    position: relative;}
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
