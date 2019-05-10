@@ -3020,7 +3020,7 @@ video#vid {
   background-size: cover;
   margin: 0 auto;
   }
-
+@media{
   .social {
     height: 300px;
     position: fixed;
@@ -3030,7 +3030,7 @@ video#vid {
     z-index: 100;
     float: right;
     padding-bottom: 20px;
-  }
+  } }
 
   .callUs {
   
@@ -3321,5 +3321,6 @@ video#vid {
     width: 100%;
   }
 }
+html, body { overflow-x: hidden; }
 
 

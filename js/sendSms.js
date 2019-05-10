@@ -31,7 +31,7 @@ function sendSms() {
         var settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://www.fast2sms.com/dev/bulk?authorization=Ql4F9ruTKWmcPONnEY1CVqsDfpIvk7XMRUAG2i6otZyzjaH05BkRvUPgVcWmpsAM097FCB2LytGr1lNI&sender_id=FSTSMS&message=" + finalMessage + "&language=english&route=p&numbers=9049696198",
+            "url": "https://www.fast2sms.com/dev/bulk?authorization=8hwngsHY9F15DxftzKBZTSmMVPbrdIlC7vkNW2A3OL0jcG6Rquv2dgyb5SYTWzRGAVHhaoD6cwfJuI0m&sender_id=FSTSMS&message=" + finalMessage + "&language=english&route=p&numbers=9049696198",
             "method": "GET",
         }
         $.ajax(settings).done(function (response) {         //Ajax Call to SMS Api
