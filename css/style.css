@@ -3453,7 +3453,7 @@ html, body { overflow-x: hidden; }
   .topnav.responsive .dropdown {float: none;}
   .topnav.responsive .dropdown-content {
     margin-top: 0px;
-    min-width: fit-content;
+    min-width: max-content;
     position: relative;}
   .topnav.responsive .dropdown .dropbtn {
     display: block;
