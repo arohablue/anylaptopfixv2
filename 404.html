@@ -41,6 +41,7 @@
   <link rel="shortcut icon" href="ico/favicon.png" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   
 </head>
@@ -108,52 +109,43 @@
           <div class="span8">
             <div class="navbar navbar-static-top">
               <div class="navigation">
-                <nav>
-                  <ul class="nav topnav">
-                    <li class="dropdown"><a href="index.html">Home</a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="data-recovery.html">Data Recovery <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="hard-disk-recovery.html">Hard Disk Recovery</a></li>
+                <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 
-                        <li><a href="404.html">Pen Drive Recovery</a></li>
-                        <li><a href="404.html">RAID Recovery</a></li>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <div class="dropdown">
+    <a class="dropbtn">DATA
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-content">
+      <a href="data-recovery.html">DATA RECOVERY</a>
+      <a href="hard-disk-recovery.html">HARD DISK RECOVERY</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <a class="dropbtn">REPAIR 
+      <i class="fa fa-caret-down"></i>
+    </a>
+    <div class="dropdown-content">
+      <a href="repair.html">REPAIR SERVICES</a>
+      <a href="laptop-repair.html">LAPTOP REPAIR</a>
+      <a href="macbook-repair.html">MAC BOOK REPAIR</a>
+      <a href="mobile-repair.html">MOBILE PHONE REPAIR</a>
+    </div>
+  </div> 
+  
+  <a href="products.html">PRODUCTS</a>
+  <a href="about.html">ABOUT US</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="repair.html">Repair <i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="laptop-repair.html">Laptop Repair</a></li>
-                        <li><a href="macbook-repair.html">Mac Book Repair</a></li>
-                        <li><a href="mobile-repair.html">Mobile Phone Repair</a></li>
-
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="products.html">Products<i class="icon-angle-down"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="404.html">Mother Board</a></li>
-                        <li><a href="404.html">Adapter</a></li>
-                        <li><a href="404.html">Battery</a></li>
-                        <li><a href="404.html">SSD</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="about.html">About us</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact </a>
-                    </li>
-                  </ul>
-                
-                </nav>
+</div>
               </div>
               <!-- end navigation -->
             </div>
           </div>
         </div>
+      </div>
       </div>
     </header>
     <!-- end header -->
