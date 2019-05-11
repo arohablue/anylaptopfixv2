@@ -41,11 +41,11 @@ function sendSms() {
         });
 
         Email.send({                                        //SMTP call to Email Api
-            Host: "smtp.elasticemail.com",
-            Username: "anylaptopfix@gmail.com",
-            Password: "c0610a75-de20-43b5-9114-2989f4be1971",
-            To: "anylaptopfix@gmail.com",
-            From: "anylaptopfix@gmail.com",
+            Host: "smtp.sendgrid.net",
+            Username: "apikey",
+            Password: "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",
+            To: 'anylaptopfix@gmail.com',
+            From: 'anylaptopfixv2@gmail.com',
             Subject: subject,
             Body: finalEmail
         }).then(
