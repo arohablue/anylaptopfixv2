@@ -3027,7 +3027,7 @@ video#vid {
     margin-top: 25%;
     perspective: 1000px;
     right: 0;
-    z-index: 100;
+    z-index: 500;
     float: right;
     padding-bottom: 20px;
   } }
@@ -3039,7 +3039,7 @@ video#vid {
     perspective: 1000px;
     left: 0;
     bottom: 85px;
-    z-index: 100;
+    z-index: 500;
     float: left;
     padding-bottom: 20px;
     
@@ -3335,7 +3335,7 @@ html, body { overflow-x: hidden; }
 	text-align:center;
   font-size:30px;
 	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  z-index:500;
 }
 
 .my-float{
@@ -3394,7 +3394,7 @@ html, body { overflow-x: hidden; }
   background-color: #f9f9f9;
   min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1000;
+  z-index: 499;
 }
 
 /* Style the links inside the dropdown */
@@ -3450,6 +3450,7 @@ html, body { overflow-x: hidden; }
   .topnav.responsive .dropdown {float: none;}
   .topnav.responsive .dropdown-content {
     margin-top: 0px;
+    min-width: fit-content;
     position: relative;}
   .topnav.responsive .dropdown .dropbtn {
     display: block;
