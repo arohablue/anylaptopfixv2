@@ -3020,7 +3020,7 @@ video#vid {
   background-size: cover;
   margin: 0 auto;
   }
-@media{
+
   .social {
     height: 300px;
     position: fixed;
@@ -3030,7 +3030,7 @@ video#vid {
     z-index: 500;
     float: right;
     padding-bottom: 20px;
-  } }
+  } 
 
   .callUs {
   
@@ -3325,10 +3325,10 @@ html, body { overflow-x: hidden; }
 
 .float{
 	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:590px;
-	right:0px;
+	width:50px;
+	height:50px;
+	bottom:340px;
+	left:0px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
@@ -3339,7 +3339,7 @@ html, body { overflow-x: hidden; }
 }
 
 .my-float{
-	margin-top:16px;
+	margin-top:11px;
 }
 
 /* Add a black background color to the top navigation */
@@ -3432,6 +3432,17 @@ html, body { overflow-x: hidden; }
     float: right;
     display: block;
   }
+
+  .social {
+    height: 300px;
+    position: fixed;
+    margin-top: 59%;
+    perspective: 1000px;
+    right: 0;
+    z-index: 500;
+    float: right;
+    padding-bottom: 20px;
+  } 
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
