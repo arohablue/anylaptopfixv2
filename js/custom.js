@@ -269,18 +269,24 @@ function myFunction() {
 
 function dataShow() {
   var x = document.getElementById("drop-data");
-  if (x.style.display === "block") {
-    x.style.display = "none"
-  } else {
-    x.style.display = "block";
-  }
+  var y = document.getElementById("myTopnav");
+  if(y.className == "topnav responsive"){
+    if (x.style.display === "block") {
+      x.style.display= "none"
+    } else {
+      x.style.display = "block";
+    }
+  } 
 }
 
 function repairShow() {
   var x = document.getElementById("drop-repair");
-  if (x.style.display === "block") {
-    x.style.display= "none"
-  } else {
-    x.style.display = "block";
-  }
+  var y = document.getElementById("myTopnav");
+  if(y.className == "topnav responsive"){
+    if (x.style.display === "block") {
+      x.style.display= "none"
+    } else {
+      x.style.display = "block";
+    }
+  } 
 }

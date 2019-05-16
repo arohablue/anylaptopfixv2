@@ -3357,6 +3357,7 @@ html, body { overflow-x: hidden; }
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* Add an active class to highlight the current page */
