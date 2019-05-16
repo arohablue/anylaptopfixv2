@@ -266,3 +266,21 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+function dataShow() {
+  var x = document.getElementById("drop-data");
+  if (x.style.display === "block") {
+    x.style.display = "none"
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function repairShow() {
+  var x = document.getElementById("drop-repair");
+  if (x.style.display === "block") {
+    x.style.display= "none"
+  } else {
+    x.style.display = "block";
+  }
+}
