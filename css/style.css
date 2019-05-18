@@ -3471,5 +3471,9 @@ html, body { overflow-x: hidden; }
     width: 100%;
     text-align: left;
   }
+
+  #rollAway{
+    visibility: hidden;
+  }
 } 
 
