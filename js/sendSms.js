@@ -41,11 +41,12 @@ function sendSms() {
         });
 
         Email.send({                                        //SMTP call to Email Api
-            Host: "smtp.sendgrid.net",
-            Username: "apikey",
-            Password: "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",
+            //Host: "smtp.sendgrid.net",
+            //Username: "apikey",
+            //Password: "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",
+            SecureToken: "64749e18-01d2-4c66-b169-266e27442d7c",
             To: 'anylaptopfix@gmail.com',
-            From: 'anylaptopfixv2@gmail.com',
+            From: "anylaptopfixv2@gmail.com", 
             Subject: subject,
             Body: finalEmail
         }).then(
