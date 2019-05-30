@@ -41,11 +41,11 @@ function sendSms() {
         });
 
         Email.send({                                        //SMTP call to Email Api
-            Host: "smtp.sendgrid.net",
-            Username: "apikey",
-            Password: "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",
+            Host: "smtp.gmail.com",
+            Username: "anylaptopfix@gmail.com",
+            Password:"Elite@1818",
             To: 'anylaptopfix@gmail.com',
-            From: 'anylaptopfixv2@gmail.com',
+            From: "anylaptopfix@gmail.com", 
             Subject: subject,
             Body: finalEmail
         }).then(
