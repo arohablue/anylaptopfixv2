@@ -41,6 +41,7 @@ function sendSms() {
         });
 
         Email.send({                                        //SMTP call to Email Api
+
             Host: "smtp.gmail.com",
             Username: "anylaptopfix@gmail.com",
             Password:"Elite@1818",

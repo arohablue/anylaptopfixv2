@@ -3430,6 +3430,26 @@ html, body { overflow-x: hidden; }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+
+  .bg-img {
+    height: 0px;
+  }
+
+  .sl-slider {
+    height: 0px;
+  }
+  #slider {
+    height: 100px;
+  }
+
+  .hddr-btn {
+    display:none;
+  }
+
+  .section-header {
+    margin-bottom: 0px;
+  }
+  
   .topnav a, .dropdown .dropbtn {
     display: none;
   }
@@ -3524,5 +3544,11 @@ html, body { overflow-x: hidden; }
     display: block;
     text-align: left;
   }
+#rollAway{
+    visibility: hidden;
+  }
+  
+} 
+
 }
 
